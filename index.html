@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <title>Facultatea Fizică Matematică și Tehnologii Informaționale</title>
+  <link rel="icon" type="image/x-icon" href="https://scontent-iev1-1.xx.fbcdn.net/v/t39.30808-1/211902989_2874983079292765_7705562666601686075_n.png?stp=dst-png_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jCRgyU-u1c8AX__lu_9&_nc_ht=scontent-iev1-1.xx&oh=00_AfC7P0VqdMGGc8eB_IoHjCb_dGk2-5Kq0ZWv3ySnhnyeXA&oe=653537B4">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentYear = new Date().getFullYear();
+      var footerYear = document.getElementById("footer-year");
+      footerYear.textContent = currentYear;
+    });
+  </script>
+	
+	
+ <style>
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar-fixed-top {
+    animation: fadeIn 1s;
+  }
+
+  .navbar-fixed-top.hidden {
+    animation: fadeOut 1s;
+  }
+
+
+ 
+</style>
+
+
+	<script>
+  var prevScrollpos = window.pageYOffset;
+  var navbar = $(".navbar-fixed-top");
+
+  $(window).scroll(function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
+      $(".navbar-fixed-top").removeClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
+    } else {
+      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
+      $(".navbar-fixed-top").addClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
+    }
+    prevScrollpos = currentScrollPos;
+  });
+</script>
+
+
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;900&display=swap');
+</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+  <style>
+    .collapsible {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .collapsible-summary {
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $(".collapsible-summary").click(function() {
+        $(this).next().slideToggle();
+        $(this).find(".collapsible-icon").text(function(_, text) {
+          return text === "+" ? "-" : "+";
+        });
+      });
+    });
+  </script>
+<style>
+	.format{
+		font-size: 22px;
+	}
+	
+	
+	</style>
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+	  
+	  .hr-custom{
+		  border-top: 3px solid #333;
+	  }
+	  .hr-custom1{
+		  border-top:1px solid #333;
+	  }
+	  
+	  .imagine-rotunda {
+		 border-radius:70px; 
+}
+
+	  
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+	  #column1 {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: auto;
+    }
+
+	  #column2 {
+      float: right;
+      width: 70%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+    /* Clear floats after the columns */
+	  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	  
+	  .about {
+		  padding-left: 5px;
+		  padding-right: 0;
+		  
+	  }
+	  
+	  
+  </style>
+
+  <style>
+	  .dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #444;
+}
+
+.dropdown-menu > li > a > font {
+  color: #fff;
+}
+
+    .all-browsers {
+      margin: 0;
+      padding: 15px;
+      background-color: lightgray;
+    }
+
+    .all-browsers > h1,
+    .browser {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser > h2,
+    p {
+      margin: 4px;
+      font-size: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+		align-content: center;
+		justify-content: center;
+		font-family: "Onest", sans-serif;
+		
+	  }
+	  
+	  .mijloc {
+		  padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+	  }
+	  
+	
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      padding: 10px;
+      background-color: black;
+      color: white;
+      margin-top: auto;
+    }
+
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+		
+    }
+  </style>
+
+  <style>
+    #container {
+      margin: 0 auto;
+      max-width: 1850px;
+    }
+
+    #content {
+      width: 100%;
+      padding: 20px;
+		
+    }
+	  .navbar-header{
+		  height: 50px;
+	  }
+	  .navbar-toggle{
+		  height: 45px;
+	  }
+	  .navbar-brand {
+		  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+	padding-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand font {
+  font-size: 38px;
+  font-family: "Lora";
+}
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+	  .nav-bar{
+		  font-size: 20px;
+	  }
+	  img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top hiden">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href=""><img src="https://scontent-iev1-1.xx.fbcdn.net/v/t39.30808-1/211902989_2874983079292765_7705562666601686075_n.png?stp=dst-png_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jCRgyU-u1c8AX__lu_9&_nc_ht=scontent-iev1-1.xx&oh=00_AfC7P0VqdMGGc8eB_IoHjCb_dGk2-5Kq0ZWv3ySnhnyeXA&oe=653537B4" class="confirmed"
+            style="width:55;height:55px;" /></a>
+        <a class="navbar-brand" href=""><font face="Lora">FMTI</font></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-bar" href="">Acasă</a></li>
+			<li><a class="nav-bar" href="stundeti/">Studenți</a></li>
+          
+		
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br>
+
+  <img src="resources/header.png" alt="Source Wikipedia.org" title="Source Wikipedia.org">
+
+  <div class="mijloc">
+<br>
+	  
+    <div id="content" class="container">
+		
+	  <h1>Facultatea de Fizică, Matematică și Tehnologii Informaționale</h1>
+		<h4 class="format"><b><i>Facultatea de Fizică, Matematică şi Tehnologii Informaționale</i></b> (FMTI) este prima facultate din Republica Moldova, fondată la 1 octombrie 1930, care are drept scop principal organizarea şi desfășurarea procesului instructiv-educativ şi realizarea activităților de cercetare științifică în domeniile Matematică, Fizică, Informatică și Tehnologii Informaționale.
+
+În componența catedrelor activează 42 de cadre didactice, dintre care 6 doctori habilitați, profesori universitari și 25 doctori, conferențiari universitari.
+
+			Facultatea FMTI <b><i>colaborează</i></b> cu instituții de profil din România (Universitatea din Craiova,  Universitatea “Ștefan cel Mare” din Suceava, Universitatea “Al. I. Cuza” din Iași, Casa Corpului Didactic din Suceava), Ucraina (Universitatea Națională din Cernăuți), Italia (Universitatea din Genova), Slovenia (Universitatea din Maribor), Belarus (Universitatea din Minsk), China (Universitatea Normală din Shanghai), Polonia (Universitatea Pedagogică din Cracov), Rusia (Institutul Fizico-Tehnic “A. Ioffe” din Sankt-Petersburg), Coreea (Institutul de Nanoelectronică din Seul) ș.a.
+
+În cadrul facultății FMTI <b><i>activează</i></b>:</h4>
+		
+		<h4 class="format"><ul>
+  <li>Laboratorul de cercetare Inteligență Artificială Creativă;</li>
+  <li>Laboratorul de cercetare Probleme actuale în Analiza Matematică și Algebră;</li>
+  <li>Laboratorul de cercetare Algebră, Geometrie și Topologie;</li>
+  <li>Laboratorul de cercetare Programarea softurilor educaționale;</li>
+  <li>Laboratorul de programare și robotică CYBER;</li>
+  <li>Laboratorul de mecanică și fizica moleculară;</li>
+  <li>Laboratorul de electromagnetism și fizică optică;</li>
+  <li>Laboratorul de cercetare Învățarea în medii digitalizate;</li>
+  <li>Laboratorul de cercetare Elaborare a resurselor digitale educaționale;</li>
+  <li>Laborator interdepartamental Fizica stării solide;</li>
+  <li>Seminarul științific Ecuații diferențiale și algebre;</li>
+  <li>Seminarul științific Fizica stării condensate.</li>
+</ul></h4>
+		<h4 class="format">În perioada 2015-2022, în bază de concurs, facultatea FMTI realizează cercetări științifice în cadrul a 5 <b><i>proiecte instituționale</i></b> cu finanțare din buget:</h4>
+		<h4 class="format">
+			<ul>
+			<li>Cercetarea structurilor funcțional-topologice şi aplicațiile lor (director de proiect: academician Mitrofan Cioban);</li>
+  <li>Cercetarea  modificării spectrului energetic al purtătorilor de sarcină în antimoniul de galiu sub influența dopanților din grupele elementelor de tranziție şi pământuri rare şi a interacțiunii donor-acceptor (director de proiect: conferențiar universitar Igor Postolachi);</li>
+  <li>Studiul strategiilor didactice de aplicare a metodei investigărilor științifice în medii virtuale de învățare activă (director de proiect: conferenţiar universitar Mihai Calalb);</li>
+  <li>Metodologii de formare continuă asistată de calculator a profesorilor de matematică şi informatică (director de proiect: profesor universitar Ilie Lupu);</li>
+			<li>Metodologia implementării TIC în procesul de studiere a științelor reale în sistemul de educație din Republica Moldova din perspectiva inter/transdisciplinarității (concept STEAM) (director de proiect: profesor universitar Liubomir Chiriac).</li>
+				</ul>
+		</h4>
+		<h4 class="format">În perioada 2018-2020, facultatea FMTI realizează cercetări științifice în cadrul a 2 <b><i>proiecte internaționale</i></b>:</h4>
+		<h4 class="format">
+			<ul>
+		  <li>NATO SPS G5381 MIDAS – Control of Team of Mini-UAVs to Support Counter-Terrorism Missions;</li>
+  		  <li>NATO SPS G5437 WITNESS – Wide InTegration of Sensor Networks to Enable Smart Surveillance.</li>
+				</ul>
+		</h4>
+		
+		<h2 align="center">Conducere:</h2>
+		<hr class="hr-custom" width="288px" align="center" size="5" color="#414141">
+		<div class="row">
+          <div class="col-md-6 col-12 text-center">
+			  <h2>Decan</h2>
+			  <h3>Andrei Braicov</h3>
+            <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_a_braicov.jpg" alt="" width="300px" height="300px">
+            <h4>doctor, conferenţiar universitar</h4>
+            <h4>e-mail: <a href="mailto:braicov.andrei@upsc.md">braicov.andrei@upsc.md</a>,</h4>
+			  <h4>telefon: <a href="tel:(+373) 22 74 79 19">(+373) 22 74 79 19</a></h4>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+			  <h2>Prodecan</h2>
+			  <h3>Vitalie Puțuntică</h3>
+            <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_v_putuntica.jpg" alt="" width="300px" height="300px">
+            <h4>doctor, conferenţiar universitar</h4>
+			  <h4>e-mail: <a href="mailto:putuntica.vitalie@upsc.md">putuntica.vitalie@upsc.md</a>,</h4>
+			  <h4>telefon: <a href="tel:(+373) 22 74 79 19">(+373) 22 74 79 19</a></h4>
+          </div>
+        </div>
+		<hr class="hr-custom1">
+		<br>
+		<h2 align="center">Catedre:</h2>
+		<hr class="hr-custom" width="288px" align="center" size="5" color="#414141">
+		<div class="row">
+          <div class="col-lg-3 col-md-6 col-12 text-center">
+			  <h3>Informatică și Tehnologii Informaționale</h3>
+			  <h3>Șef catedră</h3>
+			  <h4>Liubomir Chiriac</h4>
+            <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_l_chiriac.jpg" alt="" width="300px" height="300px">
+            <h4>doctor habilitat, profesor universitar</h4>
+            <h4>e-mail: <a href="mailto:chiriac.liubomir@upsc.md">chiriac.liubomir@upsc.md</a></h4>
+			  
+          </div>
+			<div class="col-lg-3 col-md-6 col-12 text-center">
+				<h3>Analiză Matematică și Ecuații Diferențiale</h3>
+			  <h3>Șef catedră</h3>
+			  <h4>Dumitru Cozma</h4>
+            <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_d_cozma.jpg" alt="" width="300px" height="300px">
+            <h4>doctor habilitat, profesor universitar</h4>
+            <h4>e-mail: <a href="mailto:cozma.dumitru@upsc.md">cozma.dumitru@upsc.md</a></h4>
+			  
+          </div>
+			<div class="col-lg-3 col-md-6 col-12 text-center">
+				<h3>Algebra, Geometrie și Topologie</h3>
+			  <h3>Șef catedră</h3>
+			  <h4>Dorin Afanas</h4>
+            <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_d_afanas.jpg" alt="" width="300px" height="300px">
+            <h4>doctor, conferenţiar universitar</h4>
+            <h4>e-mail: <a href="mailto:afanas.dorin@upsc.md">afanas.dorin@upsc.md</a></h4>
+			  
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 text-center">
+			  <h3>Fizică Teoretică și Experimentală</h3>
+			  <h3>Șef catedră</h3>
+			  <h4>Igor Postolachi</h4>
+            <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_i_postolachi.jpg" alt="" width="300px" height="300px">
+            <h4>doctor, conferenţiar universitar</h4>
+			  <h4>e-mail: <a href="mailto:postolachi.igor@upsc.md">postolachi.igor@upsc.md</a></h4>
+			  
+          </div>
+        </div>
+		<br>
+		<div class="collapsible">
+			<div class="collapsible-summary">
+		
+  <h3>Ofertă educațională <span class="collapsible-icon">+</span></h3> 
+			</div>
+  <div class="collapsible-content" style="display: none;">
+      <h4 class="format">Facultatea FMTI asigură pregătirea înaltă la următoarele programe de studii acreditate:<br>
+      <b>Ciclul I (licență)</b></h4>
+			<h4 class="format">
+			<ul>
+				<li>informatică şi matematică (4 ani);</li>
+				<li>informatică şi fizică (4 ani);</li>
+				<li>informatică şi limbi străine (4 ani);</li>
+				<li>matematică şi fizică (4 ani);</li>
+				<li>matematică şi informatică (4 ani);</li>
+				<li>fizică şi informatică (4 ani);</li>
+				<li>fizică şi matematică (4 ani);</li>
+				<li>fizică şi astronomie (4 ani);</li>
+				<li>matematică* (3 ani);</li>
+				<li>informatică* (3 ani);</li>
+				<li>fizică (3 ani).</li>
+				*Nota. Programele de studii Matematică și Informatică sunt organizate și în regim cu frecvență redusă cu durata de 4 ani.
+				
+				</ul>
+				<b>Ciclul II (masterat)</b>
+<ul>
+<li>Matematici moderne şi tehnologii moderne de instruire (2 ani);</li>
+<li>Tehnologii informaționale în instruire (2 ani);</li>
+<li>Fizica modernă şi tehnologii formative (2 ani);</li>
+<li>Educație STE(A)M și abordări didactice inovative (2 ani);</li>
+<li>Tehnologii de creare a resurselor educaționale digitale (2 ani);</li>
+<li>Matematica didactică (1,5 ani):</li>
+<li>Tehnologii informaționale și de comunicare în instruire (2 ani).</li>
+	</ul>
+Scurtă prezentare a Facultății: <a href="https://youtu.be/eDRSxIv-LMo">https://youtu.be/eDRSxIv-LMo</a>
+			
+			</h4>
+
+			</div>
+		</div>
+		<div class="collapsible">
+			<div class="collapsible-summary">
+		
+  <h3>Oportunități de angajare <span class="collapsible-icon">+</span></h3> 
+			</div>
+  <div class="collapsible-content" style="display: none;">
+     
+			<h4 class="format">
+				Absolvenții facultății FMTI au mari oportunități de angajare. Ei pot activa în calitate de:
+			<ul>
+				  
+
+<li>Analist de date (colectează, analizează şi interpretează datele în vederea generării de rapoarte statistice pentru o unitate specifică a unei instituții, dezvoltă instrumente de colectare a datelor, proiectează şi dezvoltă baze de date specifice);</li>
+<li>Administrator de baze de date (realizează expertiza tehnică pentru proiectarea, implementarea şi întreținerea bazelor de date relaționale, monitorizează şi întreține securitatea bazelor de date);</li>
+<li>Administrator de rețea (gestionează rețele de calculatoare; execută activități de întreținere, evaluare, instalare, configurare a rețelelor, de asigurare a securității rețelelor şi instruire a utilizatorilor în scopul maximizării productivității);</li>
+<li>Analist de suport tehnic (furnizează suportul tehnic necesar sistemele software şi hardware, diverselor grupuri de lucru ale instituției);</li>
+<li>Analist programator (analizează şi evaluează probleme științifice şi de afaceri; proiectează programe pe calculator, culege informații şi definește problemele în urma discuțiilor cu utilizatorul; dezvoltă specificații complete care să ajute programatorii în scrierea programelor);</li>
+<li>Documentarist în tehnologia informației (scrie şi editează rapoarte tehnice, broșuri, manuale pentru documentare internă; procură din Internet materiale necesare instituției)</li>
+<li>Cadru didactic pentru învățământul gimnazial și liceal pe domeniile menționate;</li>
+<li>Cercetător în institute de cercetare pe domeniile menționate;</li>
+<li>Inginer fizician;</li>
+<li>Operator introducere date (realizează introducere de date conform unor proceduri utilizând procesări de tip Office şi pachete software specializate);</li>
+<li>Programator (proiectează, întreține, testează şi modifică programe);</li>
+<li>Manager în instituții de învățământ;</li>
+<li>Software Designer (dezvoltă şi întreține aplicații client server, aplicații multimedia, sisteme informatice, software de telecomunicații, software educațional);</li>
+<li>Web designer (creează şi întreține site-uri web; elaborează conținuturi noi sau adaptează pe cele existente) etc.</li>
+	</ul>
+
+			
+			</h4>
+
+			</div>
+		</div>
+		
+
+
+
+			
+		
+	
+    </div>
+</div>
+    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="4"><p>© <span id="footer-year"></span> FMTI – <a href="https://upsc.md"><font color="white">UPSC</font></a> – Toate drepturile rezervate</p></font>
+        </div>
+        <div class="col-md-6" align="right">
+          <p>
+			  
+
+            <a href="https://www.facebook.com/facultateafmti" target="_blank"><img
+                src="https://media.mihailungu.com/resources/fb-logo.png" style="width: 50px;height: 50px" /></a>
+
+            <a href="https://www.instagram.com/ust_fmti/" target="_blank"><img
+                src="https://media.mihailungu.com/resources/ig-logo.png" style="width: 50px;height: 50px" /></a>
+          </p>
+        </div>
+      </div>
+         </div>
+  </footer>
+
+</body>
+
+</html>
