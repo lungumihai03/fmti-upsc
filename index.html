@@ -3,7 +3,7 @@
 
 <head>
   <title>Facultatea Fizică Matematică și Tehnologii Informaționale</title>
-  <link rel="icon" type="image/x-icon" href="https://scontent-iev1-1.xx.fbcdn.net/v/t39.30808-1/211902989_2874983079292765_7705562666601686075_n.png?stp=dst-png_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jCRgyU-u1c8AX__lu_9&_nc_ht=scontent-iev1-1.xx&oh=00_AfC7P0VqdMGGc8eB_IoHjCb_dGk2-5Kq0ZWv3ySnhnyeXA&oe=653537B4">
+  <link rel="icon" type="image/x-icon" href="resources/logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -118,7 +118,9 @@
 	  .hr-custom1{
 		  border-top:1px solid #333;
 	  }
-	  
+	  .hr-custom2{
+		  border-top:2px solid #B9B9B9;
+	  }
 	  .imagine-rotunda {
 		 border-radius:70px; 
 }
@@ -236,7 +238,7 @@
     }
 
     footer {
-      padding: 10px;
+      padding: 0;
       background-color: black;
       color: white;
       margin-top: auto;
@@ -293,6 +295,20 @@
 	  }
 	  img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+} 
+	  .navbar-inverse .navbar-nav > li > a {
+   
+    text-decoration: none; /* Elimina sublinierea textului prestabilit */
+    position: relative; /* Folosit pentru a crea o linie de sub text */
+}
+	   .navbar-inverse .navbar-nav > li > a:hover::after {
+    content: ""; /* Conținut gol pentru linie */
+    position: absolute; /* Stabilim poziția absolută */
+    bottom: 0; /* Poziționează linia sub text */
+    left: 0; /* Aliniază linia cu textul */
+    width: 100%; /* Latime de 100% a liniei */
+    height: 2px; /* Grosimea liniei */
+    background-color: white; /* Culoarea liniei la hover */
 }
   </style>
 </head>
@@ -306,7 +322,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href=""><img src="https://scontent-iev1-1.xx.fbcdn.net/v/t39.30808-1/211902989_2874983079292765_7705562666601686075_n.png?stp=dst-png_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jCRgyU-u1c8AX__lu_9&_nc_ht=scontent-iev1-1.xx&oh=00_AfC7P0VqdMGGc8eB_IoHjCb_dGk2-5Kq0ZWv3ySnhnyeXA&oe=653537B4" class="confirmed"
+        <a class="navbar-brand" href=""><img src="resources/logo.png" class="confirmed"
             style="width:55;height:55px;" /></a>
         <a class="navbar-brand" href=""><font face="Lora">FMTI</font></a>
       </div>
@@ -314,6 +330,7 @@
         <ul class="nav navbar-nav">
           <li><a class="nav-bar" href="">Acasă</a></li>
 			<li><a class="nav-bar" href="stundeti/">Studenți</a></li>
+			<li><a class="nav-bar" href="oferte-de-educatie/">Oferte</a></li>
           
 		
         </ul>
@@ -324,7 +341,7 @@
 
   <br><br><br>
 
-  <img src="resources/header.png" >
+  <img src="resources/header.png" alt="FMTI" title="FMTI">
 
   <div class="mijloc">
 <br>
@@ -416,7 +433,7 @@
 			  
           </div>
 			<div class="col-lg-3 col-md-6 col-12 text-center">
-				<h3>Algebra, Geometrie și Topologie</h3>
+				<h3>Algebra, Geometrie și Topologie</h3><br>
 			  <h3>Șef catedră</h3>
 			  <h4>Dorin Afanas</h4>
             <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_d_afanas.jpg" alt="" width="300px" height="300px">
@@ -425,7 +442,7 @@
 			  
           </div>
           <div class="col-lg-3 col-md-6 col-12 text-center">
-			  <h3>Fizică Teoretică și Experimentală</h3>
+			  <h3>Fizică Teoretică și Experimentală</h3><br>
 			  <h3>Șef catedră</h3>
 			  <h4>Igor Postolachi</h4>
             <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_i_postolachi.jpg" alt="" width="300px" height="300px">
@@ -435,46 +452,7 @@
           </div>
         </div>
 		<br>
-		<div class="collapsible">
-			<div class="collapsible-summary">
 		
-  <h3>Ofertă educațională <span class="collapsible-icon">+</span></h3> 
-			</div>
-  <div class="collapsible-content" style="display: none;">
-      <h4 class="format">Facultatea FMTI asigură pregătirea înaltă la următoarele programe de studii acreditate:<br>
-      <b>Ciclul I (licență)</b></h4>
-			<h4 class="format">
-			<ul>
-				<li>informatică şi matematică (4 ani);</li>
-				<li>informatică şi fizică (4 ani);</li>
-				<li>informatică şi limbi străine (4 ani);</li>
-				<li>matematică şi fizică (4 ani);</li>
-				<li>matematică şi informatică (4 ani);</li>
-				<li>fizică şi informatică (4 ani);</li>
-				<li>fizică şi matematică (4 ani);</li>
-				<li>fizică şi astronomie (4 ani);</li>
-				<li>matematică* (3 ani);</li>
-				<li>informatică* (3 ani);</li>
-				<li>fizică (3 ani).</li>
-				*Nota. Programele de studii Matematică și Informatică sunt organizate și în regim cu frecvență redusă cu durata de 4 ani.
-				
-				</ul>
-				<b>Ciclul II (masterat)</b>
-<ul>
-<li>Matematici moderne şi tehnologii moderne de instruire (2 ani);</li>
-<li>Tehnologii informaționale în instruire (2 ani);</li>
-<li>Fizica modernă şi tehnologii formative (2 ani);</li>
-<li>Educație STE(A)M și abordări didactice inovative (2 ani);</li>
-<li>Tehnologii de creare a resurselor educaționale digitale (2 ani);</li>
-<li>Matematica didactică (1,5 ani):</li>
-<li>Tehnologii informaționale și de comunicare în instruire (2 ani).</li>
-	</ul>
-Scurtă prezentare a Facultății: <a href="https://youtu.be/eDRSxIv-LMo">https://youtu.be/eDRSxIv-LMo</a>
-			
-			</h4>
-
-			</div>
-		</div>
 		<div class="collapsible">
 			<div class="collapsible-summary">
 		
@@ -519,6 +497,39 @@ Scurtă prezentare a Facultății: <a href="https://youtu.be/eDRSxIv-LMo">https:
 </div>
     <footer>
     <div class="container">
+		<div class="row">
+			<div class="col-md-6 col-12">
+		<p>
+			<br>
+		CONTACTE<br>
+Adresa<br>
+Str. Ghenadie Iablocikin, 5, MD-2069,<br>
+Chișinău, Republica Moldova<br>
+Comisia de admitere<br>
+e-mail: <a href="mailto:admiterea@upsc.md"><font color="white">admiterea@upsc.md</font></a><br>
+mob. (+373) 69 60 71 31<br>
+mob. (+373) 68 68 62 64<br><br>
+
+Secretariat<br>
+e-mail: <a href="mailto:secretariat@upsc.md"><font color="white">secretariat@upsc.md</font></a><br>
+tel. (+373) 22 35 83 38<br>
+
+Contabilitate<br>
+e-mail: <a href="mailto:contabilitate@upsc.md"><font color="white">contabilitate@upsc.md</font></a><br>
+tel: (+373) 0 22 35 85 86<br>
+		
+		</p>
+			</div>
+			<br>
+			<div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+				<center>
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="340px" height="340px" id="gmap_canvas" src="https://maps.google.com/maps?q=Str.%20Ghenadie%20Iablocikin,%205,%20MD-2069,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:left;height:340px;width:340px; padding=0;}</style></div></div>
+					</center>
+			</div>
+		</div>
+		</div>
+		<hr class="hr-custom2">
+		<div class="container">
       <div class="row">
         <div class="col-md-6">
           <font size="4"><p>© <span id="footer-year"></span> FMTI – <a href="https://upsc.md"><font color="white">UPSC</font></a> – Toate drepturile rezervate</p></font>
