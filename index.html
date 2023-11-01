@@ -293,6 +293,9 @@
 	  .nav-bar{
 		  font-size: 20px;
 	  }
+	  .dropdown-toggle{
+		  font-size: 20px;
+	  }
 	  img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 } 
@@ -329,8 +332,21 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a class="nav-bar" href="">Acasă</a></li>
-			<li><a class="nav-bar" href="stundeti/">Studenți</a></li>
-			<li><a class="nav-bar" href="oferte-de-educatie/">Oferte</a></li>
+			<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenți <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+                
+				
+                  <li><a href="studenti/documente/"><font  size="+2">Documente</font></a></li>
+                  <li><a href="studenti/lucruri_utile/"><font  size="+2">Lucruri utile</font></a></li>
+				<li><a href="studenti/oferte-de-educatie/"><font size="+2">Oferte</font></a></li>
+         
+               
+
+              
+            </ul>
+          </li>
           
 		
         </ul>
