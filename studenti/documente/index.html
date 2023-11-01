@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <title>Documente</title>
+  <link rel="icon" type="image/x-icon" href="../../resources/logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentYear = new Date().getFullYear();
+      var footerYear = document.getElementById("footer-year");
+      footerYear.textContent = currentYear;
+    });
+  </script>
+	
+	
+ <style>
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar-fixed-top {
+    animation: fadeIn 1s;
+  }
+
+  .navbar-fixed-top.hidden {
+    animation: fadeOut 1s;
+  }
+
+
+ 
+</style>
+
+
+	<script>
+  var prevScrollpos = window.pageYOffset;
+  var navbar = $(".navbar-fixed-top");
+
+  $(window).scroll(function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
+      $(".navbar-fixed-top").removeClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
+    } else {
+      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
+      $(".navbar-fixed-top").addClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
+    }
+    prevScrollpos = currentScrollPos;
+  });
+</script>
+
+
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;900&display=swap');
+</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+  <style>
+    .collapsible {
+		
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+	  color: #1e261f;
+    }
+
+    .collapsible-summary {
+      cursor: pointer;
+		color: #1e261f;
+    }
+	  a{
+		  color: #1e261f;
+	  }
+	  a:hover{
+		  color:#1e261f;
+	  }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $(".collapsible-summary").click(function() {
+        $(this).next().slideToggle();
+        $(this).find(".collapsible-icon").text(function(_, text) {
+          return text === "+" ? "-" : "+";
+        });
+      });
+    });
+  </script>
+<style>
+	.format{
+		font-size: 22px;
+	}
+	
+	
+	</style>
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+	  
+	  .hr-custom{
+		  border-top: 3px solid #333;
+	  }
+	  .hr-custom1{
+		  border-top:1px solid #333;
+	  }
+	  .hr-custom2{
+		  border-top:2px solid #B9B9B9;
+	  }
+	  .imagine-rotunda {
+		 border-radius:70px; 
+}
+
+	  
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+	  #column1 {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: auto;
+    }
+
+	  #column2 {
+      float: right;
+      width: 70%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+    /* Clear floats after the columns */
+	  .row{
+		  margin: 0px;
+	  }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	  
+	  .about {
+		  padding-left: 5px;
+		  padding-right: 0;
+		  
+	  }
+	  
+	  
+  </style>
+
+  <style>
+	  .dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #444;
+}
+
+.dropdown-menu > li > a > font {
+  color: #fff;
+}
+
+    .all-browsers {
+      margin: 0;
+      padding: 15px;
+      background-color: lightgray;
+    }
+
+    .all-browsers > h1,
+    .browser {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser > h2,
+    p {
+      margin: 4px;
+      font-size: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+		align-content: center;
+		justify-content: center;
+		font-family: "Onest", sans-serif;
+		
+	  }
+	  
+	  .mijloc {
+		  padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+	  }
+	  
+	
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      padding: 0;
+      background-color: black;
+      color: white;
+      margin-top: auto;
+    }
+
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+		
+    }
+  </style>
+
+  <style>
+    #container {
+      margin: 0 auto;
+      max-width: 1850px;
+    }
+
+    #content {
+      width: 100%;
+      padding: 20px;
+		
+    }
+	  .navbar-header{
+		  height: 50px;
+	  }
+	  .navbar-toggle{
+		  height: 45px;
+	  }
+	  .navbar-brand {
+		  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+	padding-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand font {
+  font-size: 38px;
+  font-family: "Lora";
+}
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+	  .nav-bar{
+		  font-size: 20px;
+	  }
+	  .dropdown-toggle{
+		  font-size: 20px;
+	  }
+	  img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+} 
+	  .navbar-inverse .navbar-nav > li > a {
+   
+    text-decoration: none; /* Elimina sublinierea textului prestabilit */
+    position: relative; /* Folosit pentru a crea o linie de sub text */
+}
+	   .navbar-inverse .navbar-nav > li > a:hover::after {
+    content: ""; /* Conținut gol pentru linie */
+    position: absolute; /* Stabilim poziția absolută */
+    bottom: 0; /* Poziționează linia sub text */
+    left: 0; /* Aliniază linia cu textul */
+    width: 100%; /* Latime de 100% a liniei */
+    height: 2px; /* Grosimea liniei */
+    background-color: white; /* Culoarea liniei la hover */
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top hiden">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../"><img src="../../resources/logo.png" class="confirmed"
+            style="width:55;height:55px;" /></a>
+        <a class="navbar-brand" href="../../"><font face="Lora">FMTI</font></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-bar" href="../../">Acasă</a></li>
+			<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenți <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+                
+				
+                  <li><a href=""><font  size="+2">Documente</font></a></li>
+                  <li><a href="../lucruri_utile/"><font  size="+2">Lucruri utile</font></a></li>
+				<li><a href="../../oferte-de-educatie/"><font size="+2">Oferte</font></a></li>
+         
+               
+
+              
+            </ul>
+          </li>
+			
+			
+          
+		
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br>
+
+  <img src="../../resources/header.png" alt="FMTI" title="FMTI">
+
+  
+<br>
+	  
+    
+		<div id="content" class="container">
+	<h1 align="center">Acte Normative:</h1>
+	</div>
+	  
+		<br>
+	
+		<div class="row" style="color: #1e261f">
+			<font color="#1e261f">
+    <div class="col-md-6">
+		<h2 align="center">Interne 1</h2>
+        <div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Carta UPSC <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format" style="color: #1e261f">
+                    
+                    <ul>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_carta_upsc__nr282_23.05.2015.pdf" target="_blank" style="color: #1e261f">Carta Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 10 din 28.05.2015</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/07/Amendamente-la-Carta-universitara-UPSC.pdf" target="_blank" style="color: #1e261f">Amendamente la Carta Universității Pedagogice de Stat ,,Ion Creangă” din Chișinău</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Documente de dezvoltare strategică <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format" style="color: #1e261f">
+                    
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_plan_operational_UPSC_-2023_02.03.2023.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul operațional de acțiuni pentru asigurarea dezvoltării Universității în anul 2023, aprobat în ședința Senatului, P-V nr. 8 din 02.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/06/Strategia_-Centrul-Clasa-Viitorului_2022-2025.pdf" target="_blank" rel="noopener" style="color: #1e261f">Strategia de dezvoltare&nbsp;a Centrului Național de Inovații Digitale în Educație „Clasa Viitorului” pentru anii 2022-2025, aprobată în ședința Senatului, PV nr. 7 din 24.02.2022.</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_plan_operational_2022_v2.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul operațional de acțiuni pentru asigurarea dezvoltării Universității în anul 2022, aprobat în ședința Senatului, P-V nr. 7 din 24.02.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_strategia-LLL_UPSC.pdf" target="_blank" rel="noopener" style="color: #1e261f">Strategia de învățare pe tot parcursul vieții a Universității Pedagogice de Stat „Ion Creangă” din Chișinău pentru perioada 2021 – 2025, aprobată în ședința Senatului PV nr. 2 din 30.09.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/11/upsc_acte_normative_plan_strategie_21_25_nr_9_27_05_2021.pdf" target="_blank" rel="noopener" style="color: #1e261f">Plan de acțiuni pentru implementarea strategiei de învățare pe tot parcursul vieții a Universității Pedagogice de Stat „Ion Creanga” din Chișinău pentru perioada mai 2021 – mai 2022, aprobat în ședința Senatului PV nr. 9 din 27.05.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/11/upsc_acte_normative_plan_strategie_21_25_nr_9_27_05_2021.pdf" target="_blank" rel="noopener" style="color: #1e261f">Plan de acțiuni pentru implementarea strategiei de învățare pe tot parcursul vieții a Universității Pedagogice de Stat „Ion Creanga” din Chișinău pentru perioada 2021 – 2025, aprobat în ședința Senatului PV nr. 9 din 27.05.2021.</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/07/acte_Plan_dezvoltare_strategica_UPSC_2021-2025.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul de dezvoltare strategică a Universității Pedagogice de Stat „Ion Creangă” din Chișinău pentru perioada 2021-2025, aprobat în ședința Senatului UPSC P-V nr. 8 din 25.03. 2021.</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/09/acte_normative_interne_plan_oper_2021.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul operațional de acțiuni pentru asigurarea dezvoltării Universității în anul 2021, aprobat în ședința Senatului, P-V nr. 8 din 25.03.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/03/univ_doc_intern_plan_oper_actiuni_2019.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul operațional de acțiuni pentru asigurarea dezvoltării Universității în anul 2020, aprobat în ședința Senatului PV nr. 7 din 27.02.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/07/univ_doc_intern_strat_internation_2019_2025.pdf" target="_blank" rel="noopener" style="color: #1e261f">Strategia de internaționalizare a Universității Pedagogice de Stat “Ion Creangă” din Chișinău în perioada 2019-2025, aprobată în ședința Senatului PV nr. 12 din 30.05.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/03/univ_doc_intern_plan_oper_actiuni_2019.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul operațional de acțiuni pentru asigurarea dezvoltării Universității în anul 2019, aprobat în ședința Senatului PV nr. 9 din 28.02.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/03/univ_doc_intern_plan_oper_actiuni_2018.pdf" target="_blank" rel="noopener" style="color: #1e261f">Planul operațional de acțiuni pentru asigurarea dezvoltării Universității în anul 2018, aprobat în ședința Senatului PV nr. 7 din 20.02.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/04/univ_doc_intern_strateg_dezvolt_personal_25_10_18.pdf" target="_blank" rel="noopener" style="color: #1e261f">Strategia de dezvoltare a personalului în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobată în ședința Senatului PV nr. 3 din 25.10.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_strateg_cercet_2015_2020.pdf" target="_blank" rel="noopener" style="color: #1e261f">Strategia cercetării-dezvoltării a Universității Pedagogice de Stat „Ion Creangă” din mun. Chișinău în perioada 2015-2020, aprobată în ședința Senatului PV nr. 9 din 30.04.2015</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Organe de conducere ale Universității <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format" style="color: #1e261f">
+                    
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2023/07/acte_normative_reg_posturi-_conducere_22.06.2023.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulament privind ocuparea posturilor de conducere (decan, șef de catedră/departament) în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, P-V nr. 12 din 22.06.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulamentul_facultatii_30.03.2023.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulamentul Facultății Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului,&nbsp; PV nr. 9 din 30.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulamentul_consiliului_facultatii_30.03.2023.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulamentul de organizare și funcționare a Consiliului Facultății din în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 9 din 30.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulamentul_catedrei_30.03.2023.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulamentul Catedrei/Departamentului Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului,&nbsp; PV nr. 9 din 30.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/10/acte_regulamentul_de_organizare_si_functionare_a_Senatului_2022.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulament de organizare și funcționare a Senatului Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 29.09.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/10/acte_regulament_consiliu_de_adminstratie_UPSC_2022.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulament de organizare și funcționare a Consiliului de administrație al Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 29.09.2022</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/06/univ_doc_intern_reg_facultati_26_04_2018.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulamentul Facultății Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 9 din 26.04.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/06/univ_doc_intern_reg_catedre_26_04_2018.pdf" target="_blank" rel="noopener" style="color: #1e261f">Regulamentul Catedrei Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 9 din 26.04.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/01/univ_doc_intern_reg_intern_21_12_2017.pdf" target="_blank" rel="noopener">Regulamentul intern al Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 5 din 21.12.2017</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_reg_aleg_rect_26_03_2015.pdf" target="_blank" rel="noopener">Regulament privind modul de alegere a Rectorului Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 7 din 26.03.2015</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/09/univ_doc_intern_reg_ocup_post_cond_26_11_2015_2.pdf" target="_blank" rel="noopener">Regulament privind ocuparea posturilor de conducere în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 3 din 26.11.2015</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/11/univ_doc_intern_reg_func_cons_fac_29_10_2015_1.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Consiliului facultății din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 29.10.2015</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_reg_func_cdsi_28_05_2015.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Consiliului pentru dezvoltare strategică instituțională al Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 28.05.2015</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Organizarea și funcționarea subdiviziunilor UPSC <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format" style="color: #1e261f">
+                    
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_ICITT_02.03.2023.pdf" target="_blank" rel="noopener"><span lang="RO">Regulament de organizare și funcționare a Institutului de Cercetare, Inovare și Transfer Tehnologic al Universităţii Pedagogice de Stat „Ion Creangă” din Chişinău,</span><span lang="RO">&nbsp;aprobat în ședința Senatului,&nbsp; PV nr. 8 din 02.03.2023</span></a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_organizare_functionare_-DMAAC_02.03.2023.pdf" target="_blank" rel="noopener">Regulament de organizare și funcţionare a Direcţiei &nbsp;Management Academic și Asigurarea Calităţii la&nbsp;Universitatea Pedagogică de Stat „Ion Creangă” Din Chișinău (DMAAC), aprobat în ședința Senatului PV nr. 8 din 02.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/02/acte_regulament_org_funct_SACDC_2023.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Secției Asigurarea Calității și Dezvoltare Curriculară din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău,&nbsp;aprobat în ședința Senatului P-V nr. 7 din 26.01.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_Regulament_CFCL_24.11.2022.pdf" target="_blank" rel="noopener">R</a><a href="https://upsc.md/wp-content/uploads/2022/12/acte_Regulament_CFCL_24.11.2022.pdf" target="_blank" rel="noopener">egulamentul de organizare și funcționare a Centrului de Formare Continuă și Leadership din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului P-V nr. 5 din 24.11.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_interne_115_regulament_organizare_DCIMI_24.02.2022.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Direcției Comunicare, Imagine și Marketing Instituțional (DCIMI), aprobat în ședința Senatului , P-V nr. 7 din 24.02.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/01/acte_normative_110_regulament_-functionare_SRIMP_23.12.2021.pdf" target="_blank" rel="noopener">Regulament de Organizare și Funcționare a Secției Relații Internaționale și Managementul Proiectelor din Cadrul Universității Pedagogice de Stat ‟Ion Creangă” din Chișinău, aprobat în ședința Senatului, P-V nr. 5 din 23.12.2021</a></li>
+</ul>
+					<ul>
+<li><a href="https://upsc.md/wp-content/uploads/2022/01/acte_normative_109_regulament_DTI_29.11.2021.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Direcției Tehnologii Informaționale din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, P-V nr. 4 din 29.11.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/11/acte_normative_OPSU_FC_regulament_functionare_CFC_v2.pdf" target="_blank" rel="noopener">Regulamentul de organizare și funcționare a Centrului de formare continuă din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 30.09.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/11/acte_normative_OPSU_FC_plan_strategic_dezvoltare_CFC.pdf" target="_blank" rel="noopener">Planul strategic de dezvoltare a Centrului de formare continuă din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău pentru perioada 2020 -2023, aprobat în ședința Senatului PV nr. 2 din 30.09.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/07/acte_normative_doc_interne_reg_cep.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Centrului Editorial-Poligrafic al Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 28.05.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/03/univ_doc_intern_subdiv_reg_nr_7_27_02_20.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Bibliotecii Științifice a Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 7 din 27.02.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/12/univ_doc_intern_reg_nr13_13_06_2019_.pdf" target="_blank" rel="noopener">Regulament privind&nbsp;organizarea și funcționarea Centrului National de Inovații Digitale în Educație Clasa Viitorului, aprobat în ședința Senatului PV nr. 13 din 13.06.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/04/univ_doc_intern_subdiv_reg_crc_nr_10_28_03_19.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare a Cancelariei din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 28.03.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/03/univ_doc_intern_subdiv_reg_crc_nr9_28_02_19.pdf" target="_blank" rel="noopener">Regulament de activitate a Centrului de Resurse Curriculare din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului din PV nr. 9 nr. 28.02.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/03/univ_doc_intern_subdiv_reg_org_function_sru_28_02_19.pdf" target="_blank" rel="noopener">Regulament cu privire la organizarea și desfășurarea activității Secției Resurse Umane din Cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 9 din 28.02.2019</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Organizarea procesului de studii universitar <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format" style="color: #1e261f">
+                    
+                    <p><strong>Licență/Master&nbsp;</strong></p>
+<ul>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/acte_UPSC_instructiune-cadru_catalog.pdf" target="_blank" rel="noopener">Ordin cu privire la aprobarea instrucțiunii de completare a catalogului grupei academice, aprobat în baza deciziei Consiliului Administrativ, P-V nr. 2 din 29.08.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulamentul_elaborarii_sustinerii_tezei_licenta_30.03.2023.pdf" target="_blank" rel="noopener"><span lang="RO">Regulamentul privind elaborarea și susținerea tezelor de licenţă în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău,&nbsp;</span><span lang="RO">aprobat în ședința Senatului, PV nr. 9 din 30.03.2023</span></a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/06/acte_ghid_elaborarea_tezei_de_licenta_30.03.2023.pdf" target="_blank" rel="noopener">Ghid pentru elaborarea și susținerea tezelor de licență în Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 9 din 30.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_ocuparea_locurilor_finanantare_buget_02.03.2023.pdf" target="_blank" rel="noopener"><span lang="RO">Regulament </span><span lang="RO">privind&nbsp;</span><span lang="RO">condiţiile de ocupare a locurilor cu finanţare bugetară în Universitatea Pedagogică de Stat „Ion Creangă” din Chişinău, aprobat în ședința Senatului,&nbsp; PV nr. 8 din 02.03.2023</span></a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_procedura_de_acumulare_a_minim_curricular_UPSC_02.03.2023.pdf" target="_blank" rel="noopener"><span lang="RO">Procedura de acumulare a minimului curricular inițial,&nbsp; ciclul II, studii superioare de master, în cadrul&nbsp;</span><span lang="RO">Universității Pedagogice de Stat „Ion Creangă” din Chișinău,</span><span lang="RO">&nbsp;aprobat în ședința Senatului,&nbsp; PV nr. 8 din 02.03.2023</span></a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_evaluarea_competentelor_de_studii_22.03.2023.pdf" target="_blank" rel="noopener">Regulament&nbsp;&nbsp;de evaluare a competenţelor şi finalităţilor de studiu ale studenților Universității Pedagogice de Stat „Ion Creangă” din Chișinău (ciclul I, Licență; ciclul II, Master),&nbsp;&nbsp;aprobat în ședința Senatului, PV nr. 8 din 02.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_examen_de_finalizare_a_-studiilor_-28.02.2023.pdf" target="_blank" rel="noopener"><span lang="RO">Regulament privind organizarea examenului de finalizare a studiilor superioare de licenţă în Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău,&nbsp;</span>aprobat în ședința Senatului, PV nr. 8 din 02.03.2023</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_instructiune_echivalare_EST.pdf" target="_blank" rel="noopener">Instrucțiune privind evaluarea calificărilor acordate în unitățile administrativ-teritoriale din stânga Nistrului și municipiul Bender în vederea continuării studiilor și accesului pe piața muncii, aprobată în ședința Senatului, P-V, Nr. 6, din 21.12.2022</a></li>
+</ul>
+<ul>
+<li><a href="https://upsc.md/wp-content/uploads/2022/05/acte_regulament_studii-_masterat_21.04.2022.pdf" target="_blank" rel="noopener">Regulamentul de organizare și desfășurare a studiilor superioare de master – ciclul II în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 21.04.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/08/Acte_Regulament_organizarea._invatamantului_la_distanta_23.12.2021.pdf" target="_blank" rel="noopener">Regulamentul privind organizarea și desfășurarea învățământului la distanță în cadrul Universității Pedagogice de Stat „ION CREANGĂ” din Chișinău, aprobat în ședința Senatului, P-V nr. 5 din 23.12.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_Reg.-init.-elab.-monit.-progr.-28.01.2021-1.pdf" target="_blank" rel="noopener">Regulamentul privind inițierea, elaborarea, monitorizarea și revizuirea periodică a programelor de studii, curricula la discipline în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 6 din 28.01.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/acte_interne_reg_org_stud_sup_licenta_01_10_20.pdf" target="_blank" rel="noopener">Regulament de organizare a studiilor superioare de licență (ciclul I) în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 01.10.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/05/univ_doc_intern_metodologie_nr_9_21_05_20.pdf" target="_blank" rel="noopener">Metodologia privind organizarea examenului de finalizare a studiilor superioare, la distanță, în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău: Susținerea tezelor de Licență/Master, aprobată în ședința Senatului PV nr. 9 din 21.05.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/03/regulament_elaborare_sustinere_teze_an.pdf" target="_blank" rel="noopener">Regulament privind elaborarea și susținerea tezelor de an în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 7 din 27.02.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/03/univ_doc_intern_org_reg_antiplagiat_25_10_2018_3.pdf" target="_blank" rel="noopener">Regulament privind prevenirea plagiatului în&nbsp;cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința&nbsp;Senatului PV nr. 3 din 25.10.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/11/univ_doc_intern_reg_org_des_staag_pract_ciclu_I_din__21_06_2018.pdf.pdf" target="_blank" rel="noopener">Regulament privind organizarea și desfășurarea stagiilor de practică (ciclul I – studii superioare de licență, programul de studii Asistență Socială), aprobat în ședința Senatului PV nr. 11 din 21.06.2018</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/02/univ_doc_intern_org_reg_tez_master_30_03_17_3.pdf" target="_blank" rel="noopener">Regulament privind elaborarea și susținerea&nbsp;tezelor de master în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința&nbsp;Senatului PV nr. 7 din 30.03.2017</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/02/univ_doc_intern_org_reg_tez_licenta_30_03_17_3.pdf" target="_blank" rel="noopener">Regulament privind elaborarea și susținerea tezelor de licență&nbsp;în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 7 din 30.03.2017</a></li>
+<li>
+<p><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_organizare_studii_SNCS_25.02.2016.pdf" target="_blank" rel="noopener">Regulament de organizare a studiilor în cadrul Universităţii Pedagogice de Stat „Ion Creangă” din Chişinău, în baza sistemului naţional de credite de studiu, aprobat în ședința Senatului, P-V nr. 6 din 25.02.2016</a></p>
+</li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_org_reg_prac_25_02_2016.pdf" target="_blank" rel="noopener">Regulament privind organizarea și desfășurarea stagiilor de practică (ciclul I – studii superioare de licență, ciclul II – studii superioare de master), aprobat în ședința Senatului PV nr. 6 din 25.02.2016</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/11/univ_doc_intern_org_ghid_teza_master_29_05_14_2.pdf" target="_blank" rel="noopener">Ghid pentru elaborarea și susținerea tezelor de master în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința&nbsp;Senatului PV nr. 9 din 29.05.2014</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/11/univ_doc_intern_org_ghid_teza_licenta_17_04_14_2.pdf" target="_blank" rel="noopener">Ghid pentru elaborarea și susținerea tezelor de licență în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința&nbsp;Senatului PV nr. 8 din 17.04.2014</a></li>
+</ul>
+<p><strong>Doctorat</strong></p>
+<ul>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/09/subdiv_birou_dsdp_regulament_11_09_19.pdf" target="_blank" rel="noopener">Regulamentul Instituțional privind Verificarea Similitudinilor în Tezele de Doctor și Doctor Habilitat</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/07/acte_metodologia_competitiei_proiectelor_stiintifice_24.02.2022.pdf" target="_blank" rel="noopener">Metodologia de desfăşurare a competiţiei proiectelor ştiinţifice pentru repartizarea granturilor doctorale de la bugetul de stat,&nbsp;aprobat în ședința Senatului PV nr. 7 din 24.02.2022</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/05/univ_doc_intern_doct_nr_14_27_06_19_2.pdf" target="_blank" rel="noopener">Procedura de evaluare și susținere a tezei de doctor în cadrul Universității Pedagogice de Stat “Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 14 din 27.06.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2021/02/univ_doc_intern_doct_nr9_28_02_19_4c.pdf" target="_blank" rel="noopener">Regulament de organizare și desfășurare a programelor de post doctorat în cadrul Universității Pedagogice de Stat “Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 9 din 28.02.2019</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/05/acte_normative_11.-Reg.-institut.-doctorat-08.04.2015.pdf" target="_blank" rel="noopener">Regulament instituțional de organizare și funcționare a studiilor universitare de doctorat, aprobat în ședința Senatului PV nr. 8 din 08.04.2015</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_doct_met_consil_stud_doct_08_04_2015.pdf" target="_blank" rel="noopener">Metodologia alegerii Consiliului pentru studii universitare de doctorat și a structurilor de conducere a școlii doctorale, aprobată în ședința Senatului PV nr. 8 din 08.04.2015</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/Regulament_SDSE_2015.pdf" target="_blank" rel="noopener">Regulamentul de organizare și funcționare al Școlii Doctorale Științe ale educației din 11.06.2015</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_doct_contr_stud_30_04_2015.pdf" target="_blank" rel="noopener">Contract pentru studiile universitare de doctorat, aprobat în ședința Senatului din PV nr. 9 din 30.04.2015</a></li>
+</ul>
+<p><strong>Formare continuă</strong></p>
+<ul>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_Regulament_CFCL_24.11.2022.pdf" target="_blank" rel="noopener">&nbsp;Regulamentul de organizare și funcționare a Centrului de Formare Continuă și Leadership din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului P-V nr. 5 din 24.11.2022</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/07/univ_doc_intern_subdiv_fc_reg_nr_9_21_05_20.pdf" target="_blank" rel="noopener">Regulament privind organizarea programelor de formare continuă la distanță în cadrul Universității Pedagogice de Stat “Ion Creangă’ din Chișinău, aprobat în ședința Senatului PV nr. 9 din 21.05.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/07/univ_doc_intern_subdiv_fc_metod_nr_9_21_05_20.pdf" target="_blank" rel="noopener">Metodologia privind organizarea programelor de formare continuă la distanță în cadrul Universității Pedagogice de Stat “Ion Creangă’ din Chișinău, aprobat în ședința Senatului PV nr. 9 din 21.05.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/02/univ_doc_intern_alte_doc_reg_org_desfas_inscriere_fc_29_11_18.pdf" target="_blank" rel="noopener">Regulament privind organizarea și desfășurarea înscrierii la programele de Formare Profesională Continuă din&nbsp;Universitatea Pedagogică de Stat “Ion Creangă” din Chișinău aprobat în ședința Senatului PV nr. 4 din 29.11.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/04/univ_doc_intern_proced_elabor_reviz_progr_fpf_25_10_18.pdf" target="_blank" rel="noopener">Procedura privind elaborarea, monitorizarea și revizuirea periodică a programelor de formare profesională continuă în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobată în ședința Senatului PV nr. 3 din 25.10.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/04/univ_doc_intern_reg_eval_rezult_acad_fpc_27_09_18.pdf" target="_blank" rel="noopener">Regulament privind evaluarea rezultatelor academice ale cursanților și monitorizarea calității programelor de formare profesională continuă în Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 27.09.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/04/univ_doc_intern_reg_organiz_stagii_fpc_31_01_19.pdf" target="_blank" rel="noopener">Regulament privind organizarea și desfășurarea stagiilor de formare profesională continuă în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 27.09.2018</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Cercetare științifică <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format" style="color: #1e261f">
+                    
+                   <ul style="color: #1e261f">
+<li><a href="https://upsc.md/wp-content/uploads/2023/03/acte_regulamentul_concursului_cercetatorul_anului_24.11.2022-2.pdf" target="_blank" rel="noopener">Regulament cu privire la Concursul „Cercetătorul anului” și „Tânărul cercetător al anului” organizat în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 5 din 24.11.2022</a></li>
+</ul>
+					<ul style="color: #1e261f">
+<li><a href="https://upsc.md/wp-content/uploads/2021/12/acte_normative_doc_interne_regulament_SMCDI_2021.pdf" target="_blank" rel="noopener">Regulament de Organizare și Funcționare a Secției Managementul Cercetării, Dezvoltării, Inovării din Cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului din 28.10.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_118_strategia_cer_dezv_2021_28.10.2021_v2.pdf" target="_blank" rel="noopener">Strategia de cercetare, dezvoltare și inovare a Universității Pedagogice de Stat „Ion Creangă” din Chișinău până în 2025, aprobată în ședința Senatului, P-V nr. 3 din 28.10.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/12/acte_normative_doc_interne_regulament_organizare_cercetare_2021.pdf" target="_blank" rel="noopener">Regulament privind Organizarea Activității de Cercetare Științifică în Cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului din 28.10.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/12/acte_normative_doc_interne_regulament_publicatii_2021.pdf" target="_blank" rel="noopener">Regulament Privind Publicațiile Științifice, Științifico-metodice și Didactice în Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului din 28.10.2021</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Asigurarea calității și dezvoltare curriculară <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    
+                    <ul style="color: #1e261f">
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_politica_Asigurarea_Calitatii.pdf" target="_blank" rel="noopener"><span style="color: #1e261f">Politica de asigurare a calității în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobată în ședința Senatului , PV nr. 7 din&nbsp;</span>&nbsp;21.12.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_declaratia_rectorului_politica_de_calitate.pdf" target="_blank" rel="noopener"><span style="color: #1e261f">Declarația Rectorului privind Politica de calitate&nbsp;</span>&nbsp;a&nbsp;Universității Pedagogice de Stat „Ion Creangă” din Chișinău</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_asigurarea_calitatii_UPSC_2022.pdf" target="_blank" rel="noopener">Regulament de asigurare a calității în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 12 din 26.05.2022</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2021/06/univ_doc_intern__man_reg_eval_prog_studii_27_05_21.pdf" target="_blank" rel="noopener">Regulament de evaluare internă a programelor de studii în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, reaprobat în ședința Senatului PV nr. 10 din 27.05.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2021/07/doc_inter_reg_init_elab_monit_prog_28_01_2021_7.pdf" target="_blank" rel="noopener">Regulamentul privind inițierea, elaborarea, monitorizarea și revizuirea periodică a programelor de studii, curricula la discipline în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 6 din 28.01.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2021/02/doc_inter_plan_neconform.pdf" target="_blank" rel="noopener">Planul de acțiuni privind înlăturarea neconformităților identificate în procesul de evaluare externă a programelor de studii din&nbsp; cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău pentru perioada 2018-2020, aprobat în ședința Senatului PV nr. 4 din 29.11.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/12/doc_inter_proc_calit%C4%83%C8%9Bii.pdf" target="_blank" rel="noopener">Procedura operațională de evaluare a calității serviciilor educaționale de către beneficiari în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 4 din 29.11.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/12/doc_inter_proc_recomandari.pdf" target="_blank" rel="noopener">Procedura de realizare a recomandărilor și deciziilor agenților de evaluare externă/internă a calității&nbsp;în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 4 din 29.11.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/09/univ_doc_intern__man_reg_asig_calit_30_03_2017.pdf" target="_blank" rel="noopener">Regulament de asigurare a calității în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, reaprobat în ședința Senatului PV nr. 7 din 30.03.2017</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern__man_reg_func_asig_calit_26_05_2016.pdf" target="_blank" rel="noopener">Regulament de funcționare a Consiliului de Asigurare a Calității în cadrul Universității Pedagogice de Stat ,,Ion Creangă” din mun. Chișinău, aprobat în ședința Senatului PV nr. 9 din 26.05.2016</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern__man_manual_calit_25_02_2016.pdf" target="_blank" rel="noopener">Manualul Calității, aprobat în ședința Senatului PV nr. 6 din 25.02.2016</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		
+    </div>
+    <div class="col-md-6">
+		<h2 align="center">Interne 2</h2>
+        <div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Resurse umane și performanță <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <ul>
+<li>
+<div><a href="https://upsc.md/wp-content/uploads/2023/05/acte_amendament_la_regulamentul_privind_sistemul_de_salarizare_02_03_2023.pdf" target="_blank" rel="noopener">Amendament la&nbsp;Regulamentul privind sistemul de salarizare în instituția publică Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 8 din 02.03.2023</a></div>
+</li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_amendamente_regulament_performante_P-V_6_21.12.2022.pdf" target="_blank" rel="noopener">Amendamente la Regulamentul privind modul de stabilire a sporului pentru performanță personalului dinInstituţia Publică Universitatea Pedagogică de Stat „Ion Creangă” din Chişinău. Hotărârea Senatului Universității Pedagogice de Stat ”Ion Creangă” din Chișinău, din 21.12.22, Proces-verbal nr. 6 </a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/11/acte_regulament_concurs-functii_27.10.2022.pdf" target="_blank" rel="noopener">Regulament de organizare și desfășurare a concursului pentru ocuparea funcțiilor didactice și științifico-didactice în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 3 din 27.10.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/05/acte_normative_120_codul_etica_deontologie_upsc.pdf" target="_blank" rel="noopener">Codul de etică și deontologie profesională al Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 21.04.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_117_regulament_profesor_inv_24.02.2022.pdf" target="_blank" rel="noopener">Regulament privind acordarea statutului de profesor invitat/visiting professor în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV&nbsp; nr. 7&nbsp; din 24.02.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_interne_116_regulamentul_acordare_titluri_onorifice.pdf" target="_blank" rel="noopener">Regulament privind acordarea titlurilor onorifice și a distincțiilor în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV&nbsp; nr. 7&nbsp; din 24.02.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/06/acte_regulament_spor_performanta_aprobat_23.12.2021-1.pdf" target="_blank" rel="noopener">Regulament privind modul de stabilire a sporului pentru performanță personalului din Instituția Publică Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 5 din 23.12.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/01/acte_normative_108_formarea_profesionala_continua_personal_didactic_29.11.2021.pdf" target="_blank" rel="noopener">Regulament privind formarea profesională continuă a personalului academic universitar în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, P-V nr. 4 din 29.11.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_regulament_concurs-functii.pdf" target="_blank" rel="noopener">Regulament de organizare și desfășurare a concursului pentru ocuparea funcțiilor didactice și științifico-didactice în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului, PV nr. 2 din 30.09.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/10/acte_normative_doc_interne_regulament_spor_performanta.pdf" target="_blank" rel="noopener">Regulament privind modul de stabilire a sporului pentru performanță personalului din Instituția Publică Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 5 din 19.12.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/12/univ_doc_intern_reg_nr11_18_04_2019_2.pdf" target="_blank" rel="noopener">Regulament privind sistemul de salarizare în instituția publică Universitatea Pedagogică de Stat “Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 11 din 18.04.2019</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/03/acte_normative_confer_titl_grad_28_11_2019-3.pdf" target="_blank" rel="noopener">Regulament privind conferirea titlurilor științifico-didactice în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului din PV nr. 4 din 28.11.2019</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/12/doc_inter_alte_doc_reg_com_etica.pdf" target="_blank" rel="noopener">Regulamentul comisiei de etică și deontologie profesională a Universității Pedagogice de Stat ,,Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 3 din 22.12.2016</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_org_reg_norm_activ_16_06_2016.pdf" target="_blank" rel="noopener">Regulament cu privire la normarea activității științifico-didactice, didactice în Universitatea Pedagogică de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 16.06.2016</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Studenți și ghidare în carieră <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2022/04/acte_normative_105_plasare_27.04.2022.pdf" target="_blank" rel="noopener">Ordinul nr. 105 din 27.04.2022 cu privire la plasare în câmpul muncii a absolvenților promoției 2022</a></li>
+<li>
+<p><a href="https://upsc.md/wp-content/uploads/2022/12/acte_regulament_autoguvernanta_studenteasca_UPSC_aprobat_29.11.2021.pdf" target="_blank" rel="noopener">Regulamentul cu privire la organizarea și funcționarea structurilor de autoguvernanță studențească a UPSC, aprobat prin P-V nr. 4 al ședinței Senatului UPSC din 29.11.2021</a></p>
+</li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/02/acte_normative_doc_interne_113_regulament_DSCGC_29.11.2021.pdf" target="_blank" rel="noopener">Regulament de Organizare și Funcționare a Direcției Studenți, Consiliere și Ghidare în Carieră aprobat în ședința Senatului UPSC din 29.11.2021, P-V nr. 4</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/01/acte_normative_107_plasarea_campul_-muncii_29.11.2021.pdf" target="_blank" rel="noopener">Regulament privind plasarea în câmpul muncii a absolvenților Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 4 din 29.11.2021</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/10/acte_regulament_concurs_-Studentul_Anului_aprobat_28.10.2021.pdf" target="_blank" rel="noopener">Regulamentul cu privire la organizarea concursului „Studentul Anului”, aprobat prin P-V nr. 3 din 28.10.2021.</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/11/acte_normative_SGC_regulament_campus_2021.pdf" target="_blank" rel="noopener">Regulament privind organizarea și desfășurarea activității campusului studențesc al UPSC, aprobat prin P-V nr. 11 din 24.06.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2021/05/univ_doc_intern_reg_concurs_proiecte_29_04_2021.pdf" target="_blank" rel="noopener">Regulament privind desfășurarea concursului de proiecte în beneficiul universității „Oportunități pentru Universitatea mea” , aprobat în ședința Senatului PV nr. 9 din 29.04.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2021/05/univ_doc_intern_studenti_reg_acord_burse_25_03_2021.pdf" target="_blank" rel="noopener">Regulament privind modul și condițiile de acordare a burselor în cadrul Universității Pedagogice de Stat ,,Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 8 din 25.03.2021</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/01/univ_doc_intern_alte_doc_proc_info_student_absolv_priv_loc_munc_carier.pdf" target="_blank" rel="noopener">Procedura de informare a studenților și absolvenților privind locurile de muncă și oportunitățile de carieră, aprobată în ședința Senatului PV nr. 5 din 20.12.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2019/02/univ_doc_intern_studenti_proc_orient_prof.pdf" target="_blank" rel="noopener">Procedura de orientare profesională a studenților, aprobată în ședința Senatului PV nr. 5 din 20.12.2018</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2018/07/univ_doc_intern_alte_doc_reg_org_des_olip_scol.pdf" target="_blank" rel="noopener">Regulament de organizare și desfășurare a olimpiadei la disciplinele școlare în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 9 din 26.04.2018&nbsp;</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_studenti_reg_org_func_prog_volunt_31_03_2016.pdf" target="_blank" rel="noopener">Regulament de organizare și funcționare internă a programului de voluntariat în beneficiul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 7 din 31.03. 2016</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_studenti_statut_senat_studentesc_29_01_2015.pdf" target="_blank" rel="noopener">Statutul Senatului studenților Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 5 din 29.01.2015</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Biblioteca științifică universitară <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_BS_UPSC_Regulament_de_ordine_interna.pdf" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://old.upsc.md/wp-content/uploads/2020/03/univ_doc_intern_subdiv_reg_nr_7_27_02_20.pdf&amp;source=gmail&amp;ust=1670701040791000&amp;usg=AOvVaw26gmsjm-7ogIHKlbxI9BTA">Regulament de ordine internă&nbsp; a Bibliotecii Științifice a Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 6 din 27.01.2022</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/12/acte_BS_UPSC_Politica_Formarea_profesionala.pdf" target="_blank" rel="noopener">Politica privind formarea profesională continuă a personalului Bibliotecii&nbsp; Științifice a Universității Pedagogice de Stat „Ion Creangă” din Chișinău,&nbsp;&nbsp;aprobat în ședința Senatului PV nr. 6 din 27.01.2022</a></li>
+<li><a href="https://drive.google.com/file/d/1exF7FNXFXDncN4hgkkgvhtxn9wh9RaWL/view?usp=share_link" target="_blank" rel="noopener">Politica&nbsp;de dezvoltare a resurselor informaționale ale&nbsp; Bibliotecii&nbsp;&nbsp;Științifice a Universității Pedagogice de Stat „Ion Creangă” din Chișinău,&nbsp;&nbsp;aprobat în ședința Senatului PV nr. 6 din 27.01.2022</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/11/univ_doc_intern_bib_strat_dezv.pdf">Strategia de dezvoltare a Bibliotecii Științifice a Universității Pedagogice de Stat „Ion Creangă” din Chișinău (2017-2020), aprobată în ședința Senatului PV nr. 2 din 28.09.2017</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_bib_reg_func_rep_instit_26_11_2015.pdf">Regulament de organizare și funcționare a repozitoriului instituțional digital al Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 3 din 26.11.2015</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_bib_politic_instit_31_10_2013.pdf">Politica instituțională a Universității Pedagogice de Stat „Ion Creangă” privind accesul deschis la informație a Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobată în ședința&nbsp;Senatului PV nr. 2 din 31.10.2013</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Sisteme informaționale universitare și protecția datelor cu caracter personal <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2023/04/acte_regulament_functionare_administrare_site_upsc_-02.03.2023.pdf" target="_blank" rel="noopener"><span lang="RO">Regulament </span><span lang="RO">privind organizarea și administrarea site-ului Universității Pedagogice de Stat „Ion Creangă” din Chișinău,</span><span lang="RO">&nbsp;aprobat în ședința Senatului,&nbsp; PV nr. 8 din 02.03.2023</span></a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/10/univ_doc_intern_ghid_gsuite_upsc_01_10_2020.pdf" target="_blank" rel="noopener">Ghid de utilizare a platformei “G Suite pentru educație” în cadrul Universității Pedagogice de Stat “Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 01.10.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/07/univ_doc_intern_reg_camere_nr_10_25_06_20.pdf" target="_blank" rel="noopener">Regulamentul privind supravegherea video în cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 25.06.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/10/univ_doc_intern_date_caracter_personal_28_09_2017.pdf" target="_blank" rel="noopener">Regulament privind prelucrarea și protecția datelor cu caracter personal a angajaților Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 2 din 28.09.2017</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_date_caracter_personal_10_11_2015.pdf" target="_blank" rel="noopener">Politica de securitate privind protecția datelor cu caracter personal la prelucrarea acestora în cadrul sistemelor informaționale gestionate de Universitatea Pedagogică de Stat „Ion Creangă” din mun. Chișinău, aprobată în ședința Senatului din 10.11.2015</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Finanțe și gestionare resurse <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <ul>
+<li><a href="https://upsc.md/wp-content/uploads/2021/08/ordin_212_04.08.2021_acces.pdf">Ordinul nr. 212 din 04.08.2021 cu privire la tariful maxim per metru pătrat sub formă unică pentru executarea dreptului de acces pe proprietatea publică, aflată în gestiunea UPSC</a>.&nbsp;<a href="https://upsc.md/wp-content/uploads/2021/08/ordin_212_04.08.2021_acces_anexa.pdf.pdf">Anexa la Ordinul nr. 212</a>.</li>
+<li><a href="https://upsc.md/wp-content/uploads/2021/10/2021_08_ordin_acces_conditii.pdf">Ordinul nr. 212 din 04.08.2021 cu privire la aprobarea Condițiilor de acces pe proprietatea publică, aflată în gestiunea UPSC.&nbsp;Anexa la Ordinul nr. 212.</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2020/07/univ_doc_intern_reg_locatiune_nr_10_25_06_20.pdf">Regulament cu privire la modul de dare în locațiune a spațiilor neutilizabile din cadrul Universității Pedagogice de Stat „Ion Creangă” din Chișinău, aprobat în ședința Senatului PV nr. 10 din 25.06.2020</a></li>
+<li><a href="https://old.upsc.md/wp-content/uploads/2017/05/univ_doc_intern_achiziti_publice_2017.pdf">Regulament privind achizițiile publice în cadrul Universității Pedagogice de Stat&nbsp;</a><a href="https://old.upsc.md/wp-content/uploads/2017/02/univ_doc_intern_date_caracter_personal_10_11_2015.pdf">„</a><a href="https://old.upsc.md/wp-content/uploads/2017/05/univ_doc_intern_achiziti_publice_2017.pdf">Ion Creangă” din Chișinău,&nbsp;aprobat în ședința Senatului PV nr. 8 din 27.04.2017</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Contract colectiv de muncă <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <ul>
+<li><a href="//drive.google.com/file/d/19MvmbjjhwSZ9X04uoedPUxMZGvwD5Jup/view?usp=sharing" target="_blank" rel="noopener">Contract colectiv de muncă</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+		<div class="collapsible">
+            <div class="collapsible-summary">
+                <h3>Modele de cereri <span class="collapsible-icon">+</span></h3>
+            </div>
+            <div class="collapsible-content" style="display: none;">
+                <h4 class="format">
+                    <p><strong>Studenți<br></strong></p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1gwiLpVMMQbQMp4uiZS409ZRbS43YikHX/view?usp=sharing" target="_blank" rel="noopener">Cerere în regim de plata cu ora</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_schimbare_nume.pdf" target="_blank" rel="noopener">Cerere de schimbare a numelui</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_repetarea_anului_academic.pdf" target="_blank" rel="noopener">Cerere de repetare a anului academic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_motivare_absente.pdf" target="_blank" rel="noopener">Cerere de motivare a absențelor</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_de_exmatriculare.pdf" target="_blank" rel="noopener">Cerere de exmatriculare</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/06/cerere_concediu-anual_2023-1.pdf" target="_blank" rel="noopener">Cerere de acordare a concediului academic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_transfer_restabilire.pdf" target="_blank" rel="noopener">Cerere de transfer/restabilire</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_cazare_camin.pdf" target="_blank" rel="noopener">Cerere de cazare în cămin</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_sustinere_online_teza.pdf" target="_blank" rel="noopener">Cerere de susținere online a tezei</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2022/09/acte_cerere_returnare_taxa.pdf" target="_blank" rel="noopener">Cerere de returnare a taxei de studii/cazare</a></li>
+</ul>
+<p><strong>Angajați</strong></p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1ccFSdK-9OK3nsGrVnmn8w9wU262B4d-Y/view?usp=sharing" target="_blank" rel="noopener">Acord pentru cumularea funcției temporar vacante, pentru personalul didactic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/Acord-pentru-cumularea-functiei-temporar-pentru-personalul-didactic-non-didactic.pdf" target="_blank" rel="noopener">Acord pentru cumularea funcției temporar pentru personalul didactic non-didactic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/Acord-modificarea-normei-stiintifico-didactice-anul-2023-2024-1.pdf" target="_blank" rel="noopener">Acord de modificare a normei științifico-didactice</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/cerere-angajare-cadru-didactic-de-baza.pdf" target="_blank" rel="noopener">Cerere angajare în funcția de bază, pentru personal didactic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/cerere-ang-de-baza-nondidactic.pdf" target="_blank" rel="noopener">Cerere angajare în funcția de bază, pentru personal non-didactic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/10/acte_modele_cerere_angajare_cumul-intern-extern_cadre_didactice.pdf" target="_blank" rel="noopener">Cerere angajare prin cumul, pentru personal didactic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/09/cerere-ang-prin-cumul-nondidactic.pdf" target="_blank" rel="noopener">Cerere de angajare prin cumul, pentru personal non-didactic</a></li>
+<li><a href="https://upsc.md/wp-content/uploads/2023/10/acte_modele_cerere_de_concediu_anual.pdf" target="_blank" rel="noopener">Cerere de concediu anual</a></li>
+</ul>
+                </h4>
+            </div>
+        </div>
+    </div>
+				</font>
+</div>
+
+		
+
+
+
+			
+		
+	
+    
+
+    <footer>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-5 col-12">
+		<p>
+			<br>
+		CONTACTE<br>
+Adresa<br>
+Str. Ghenadie Iablocikin, 5, MD-2069,<br>
+Chișinău, Republica Moldova<br>
+Comisia de admitere<br>
+e-mail: <a href="mailto:admiterea@upsc.md"><font color="white">admiterea@upsc.md</font></a><br>
+mob. (+373) 69 60 71 31<br>
+mob. (+373) 68 68 62 64<br><br>
+
+Secretariat<br>
+e-mail: <a href="mailto:secretariat@upsc.md"><font color="white">secretariat@upsc.md</font></a><br>
+tel. (+373) 22 35 83 38<br>
+
+Contabilitate<br>
+e-mail: <a href="mailto:contabilitate@upsc.md"><font color="white">contabilitate@upsc.md</font></a><br>
+tel: (+373) 0 22 35 85 86<br>
+		
+		</p>
+			</div>
+			<br>
+			<div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+				<center>
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="340px" height="340px" id="gmap_canvas" src="https://maps.google.com/maps?q=Str.%20Ghenadie%20Iablocikin,%205,%20MD-2069,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:left;height:340px;width:340px; padding=0;}</style></div></div>
+					</center>
+			</div>
+		</div>
+		</div>
+		<hr class="hr-custom2">
+		<div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="4"><p>© <span id="footer-year"></span> FMTI – <a href="https://upsc.md"><font color="white">UPSC</font></a> – Toate drepturile rezervate</p></font>
+        </div>
+        <div class="col-md-6" align="right">
+          <p>
+			  
+
+            <a href="https://www.facebook.com/facultateafmti" target="_blank"><img
+                src="https://media.mihailungu.com/resources/fb-logo.png" style="width: 50px;height: 50px" /></a>
+
+            <a href="https://www.instagram.com/ust_fmti/" target="_blank"><img
+                src="https://media.mihailungu.com/resources/ig-logo.png" style="width: 50px;height: 50px" /></a>
+          </p>
+        </div>
+      </div>
+         </div>
+  </footer>
+
+</body>
+
+</html>

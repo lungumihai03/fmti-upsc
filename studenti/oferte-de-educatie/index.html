@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <title>Oferte educationale FMTI</title>
+  <link rel="icon" type="image/x-icon" href="../../resources/logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentYear = new Date().getFullYear();
+      var footerYear = document.getElementById("footer-year");
+      footerYear.textContent = currentYear;
+    });
+  </script>
+	<style>
+    .collapsible {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .collapsible-summary {
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $(".collapsible-summary").click(function() {
+        $(this).next().slideToggle();
+        $(this).find(".collapsible-icon").text(function(_, text) {
+          return text === "+" ? "-" : "+";
+        });
+      });
+    });
+  </script>
+	
+ <style>
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar-fixed-top {
+    animation: fadeIn 1s;
+  }
+
+  .navbar-fixed-top.hidden {
+    animation: fadeOut 1s;
+  }
+
+
+ 
+</style>
+
+
+	<script>
+  var prevScrollpos = window.pageYOffset;
+  var navbar = $(".navbar-fixed-top");
+
+  $(window).scroll(function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
+      $(".navbar-fixed-top").removeClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
+    } else {
+      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
+      $(".navbar-fixed-top").addClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
+    }
+    prevScrollpos = currentScrollPos;
+  });
+</script>
+
+
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;900&display=swap');
+</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+  
+<style>
+	.format{
+		font-size: 22px;
+	}
+	
+	
+	</style>
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+	  
+	  .hr-custom{
+		  border-top: 3px solid #333;
+	  }
+	  .hr-custom1{
+		  border-top:1px solid #333;
+	  }
+	  .hr-custom2{
+		  border-top:2px solid #B9B9B9;
+	  }
+	  .imagine-rotunda {
+		 border-radius:70px; 
+}
+
+	  
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+	  #column1 {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: auto;
+    }
+
+	  #column2 {
+      float: right;
+      width: 70%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+    /* Clear floats after the columns */
+	  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	  
+	  .about {
+		  padding-left: 5px;
+		  padding-right: 0;
+		  
+	  }
+	  
+	  
+  </style>
+
+  <style>
+	  .dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #444;
+}
+
+.dropdown-menu > li > a > font {
+  color: #fff;
+}
+
+    .all-browsers {
+      margin: 0;
+      padding: 15px;
+      background-color: lightgray;
+    }
+
+    .all-browsers > h1,
+    .browser {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser > h2,
+    p {
+      margin: 4px;
+      font-size: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+		
+		font-family: "Onest", sans-serif;
+		
+	  }
+	  
+	  .mijloc {
+		  padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+    display: flex;
+    
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+	  }
+	  
+	
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      padding: 0;
+      background-color: black;
+      color: white;
+      margin-top: auto;
+    }
+
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+		
+    }
+  </style>
+
+  <style>
+    #container {
+      margin: 0 auto;
+      max-width: 1850px;
+    }
+
+    #content {
+      width: 100%;
+      padding: 20px;
+		
+    }
+	  .navbar-header{
+		  height: 50px;
+	  }
+	  .navbar-toggle{
+		  height: 45px;
+	  }
+	  .navbar-brand {
+		  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+	padding-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand font {
+  font-size: 38px;
+  font-family: "Lora";
+}
+	  .dropdown-toggle{
+		  font-size: 20px;
+	  }
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+	  .nav-bar{
+		  font-size: 20px;
+	  }
+	  img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+	  .navbar-inverse .navbar-nav > li > a {
+   
+    text-decoration: none; /* Elimina sublinierea textului prestabilit */
+    position: relative; /* Folosit pentru a crea o linie de sub text */
+}
+	  .navbar-inverse .navbar-nav > li > a:hover::after {
+    content: ""; /* Conținut gol pentru linie */
+    position: absolute; /* Stabilim poziția absolută */
+    bottom: 0; /* Poziționează linia sub text */
+    left: 0; /* Aliniază linia cu textul */
+    width: 100%; /* Latime de 100% a liniei */
+    height: 2px; /* Grosimea liniei */
+    background-color: white; /* Culoarea liniei la hover */
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top hiden">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../"><img src="../../resources/logo.png" class="confirmed"
+            style="width:55;height:55px;" /></a>
+        <a class="navbar-brand" href="../../"><font face="Lora">FMTI</font></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-bar" href="../../">Acasă</a></li>
+			<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenți <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+                
+				
+                  <li><a href="../documente/"><font  size="+2">Documente</font></a></li>
+                  <li><a href="../lucruri_utile/"><font  size="+2">Lucruri utile</font></a></li>
+				<li><a href=""><font size="+2">Oferte</font></a></li>
+         
+               
+
+              
+            </ul>
+          </li>
+          
+		
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br>
+	<img src="../../resources/header.png" alt="FMTI" title="FMTI">
+		<div id="content" class="container">
+	<h3>Ofertă educațională </h3> 
+	 <h4 class="format">Facultatea FMTI asigură pregătirea înaltă la următoarele programe de studii acreditate:<br>
+      <b>Ciclul I (licență)</b></h4>
+			<h4 class="format">
+				<p><em>Învățământ cu frecvență:</em></p><ul><li><strong>Matematică și Informatică</strong> (240 credite) –&nbsp;<a href="https://drive.google.com/file/d/1Wpevhv2Gd4lQzFbHH9eJOJbBtvXLAI9G/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1jjEEO-1qLtsKeVe78HsswRr1LUzGFwU8/view?usp=sharing" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Fizică și Informatică </strong>(240 credite) –<a href="https://drive.google.com/file/d/1blvoph46NLsuNmJNtmujmJAboZN-Kq9o/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1_bz2Qghq9MFdXhpLNqL4EjaB-dyB3LTb/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Informatică și Matematică&nbsp;</strong>(240 credite) –<a href="https://drive.google.com/file/d/1E69qw34EXUeYKG5-gFccoAABZF9_S9pQ/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/175sbZeDiV2csukFtiW2tVg4B4UYACxQw/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Informatică și Fizică&nbsp;</strong>(240 credite) – <a href="https://drive.google.com/file/d/1fUuRfgzA1aJ6oqUQzmotw5qIbYfuK9TJ/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Fizică și astronomie&nbsp;</strong>(240 credite) – <a href="https://drive.google.com/file/d/1-1gXW-cG_kVVJ0e7ZOqku9_1DJDMro20/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Matematică și Fizică&nbsp;</strong>(240 credite) – <a href="https://drive.google.com/file/d/1KstX3skVddgKZyFX8wdI7PsLvtFmZ-5T/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Informatică&nbsp; (Științe exacte)&nbsp;</strong>(180 credite) –<a href="https://drive.google.com/file/d/1Qt3JKfpXh1mUxfi4oXVAaHpnNZEJNKGR/view?usp=sharing">Program</a>/&nbsp;<a href="https://drive.google.com/file/d/1wacPgPahY6HpsmKb6s7bBgD1xjbwwFkg/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Matematică&nbsp;</strong>(180 credite) –<a href="https://drive.google.com/file/d/1WVoYF2Nyg01G6h6CHEuPY-X97esVXt_E/view?usp=sharing">Program</a>/&nbsp;<a href="https://drive.google.com/file/d/1o3IaBJkENzNyfnzTopbLSirAneX7CMCv/view?usp=share_link" target="_blank" rel="noopener"> Plan</a> (2018)&nbsp;</li><li><strong>Fizică&nbsp;</strong>(180 credite) – <a href="https://drive.google.com/file/d/1eFSRY_1wiN9WVOlaLadpgcPVRqQ8ktyP/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Informatică (Științe ale educației)&nbsp;</strong>(180 credite) –<a href="https://drive.google.com/file/d/1PhNKUlFiOadu792wTGZQlBlS64A2ywka/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/18fL9k8X0T_jDmWN8j0w7QZC7bJkHE2AI/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2022)&nbsp;</li></ul><p><em>Învățământ cu frecvență redusă:</em></p><ul><li><strong>Matematică </strong>(180 credite) –<a href="https://drive.google.com/file/d/1s7tjylMrZ9Hk4ra1R5YVuvlrtqv4JC6E/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1615CS-rzCahoDaDlgPrEfcW_XktcjT7J/view" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Informatică </strong>(180 credite) –<a href="https://drive.google.com/file/d/1SqxIm3Fi8wEV15e7Sfk5cdaS6x9bDTb4/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1TyV-2KiX9YxJwpHuySunnT3k3YVvF-8y/view" target="_blank" rel="noopener">Plan</a> (2018)&nbsp;</li><li><strong>Fizică </strong>(180 credite) –<a href="https://drive.google.com/file/d/1PIfzAI4QmVL1kAbl7ZKt16l1r_A8hl7q/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1Ysi-ut7uVNhO8KrL74UDioFQMvQlb48Z/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2018)</li></ul>
+				<b>Ciclul II (masterat)</b>
+<ul><li><strong>Matematici moderne şi tehnologii moderne de instruire </strong>(120 credite) – <a href="https://drive.google.com/file/d/11MSqnKUhpzofelBQ7L_BPV_E4i06Hk56/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1LE23Tg9niba8HcrMI_z9gx30_-UkNdw9/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2021)</li><li><strong>Tehnologii informaționale în instruire</strong> (120 credite) – <a href="https://drive.google.com/file/d/12vm4YsYmXt8H77kss3sSRK31dKanD0Vy/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2021)</li><li><strong>Fizica modernă şi tehnologii formative </strong>(120 credite) –<a href="https://drive.google.com/file/d/1CLbhQNpmuPI2BeIDwbRvfuAYUFdVIGGA/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1TZ2SM3q2rQUqWbBkRQvY-J0SgnFpQaHu/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2021)</li><li><strong>Educație STE(A)M și abordări didactice inovative </strong>(120 credite) –<a href="https://drive.google.com/file/d/1xIyHB3uE9wtUFUatC4F0jhDJ82o6XfkI/view?usp=sharing">Program</a>/ <a href="https://drive.google.com/file/d/1064AOxKF79Glp15koz3XavlWrXGFaxE4/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2020)</li><li><strong>Matematica didactică </strong>(90 credite) – <a href="https://drive.google.com/file/d/1i-torTft_AR-NCQ7z3NLLZos0x7BQqj_/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2022)</li><li><strong>Tehnologii de creare a resurselor educaționale digitale </strong>(120 credite) – <a href="https://drive.google.com/file/d/131ZrWOKcMIWt2ptptdBS7N3xU6vsHI52/view" target="_blank" rel="noopener">Plan</a> (2022)</li><li><strong>Tehnologii informaționale și de comunicare în instruire </strong>(120 credite) – <a href="https://drive.google.com/file/d/1UjJGdWtyhBzPYJ4UAMVCmqBJrRiE_ULU/view?usp=share_link" target="_blank" rel="noopener">Plan</a> (2022)</li><li><strong>Inovații și Leadership în Educație prin Tehnologii Informaționale </strong>(90 credite) –<a href="https://drive.google.com/file/d/1fqgfpFiMjsPclQ7eMSyXdrTZVSSBdWlW/view?usp=sharing">Program/</a> <a href="https://drive.google.com/file/d/1UjJGdWtyhBzPYJ4UAMVCmqBJrRiE_ULU/view?usp=share_link" target="_blank" rel="noopener">Plan</a>(2023)</li></ul>
+Scurtă prezentare a Facultății: <a href="https://youtu.be/eDRSxIv-LMo">https://youtu.be/eDRSxIv-LMo</a>
+			
+			</h4>
+	
+	</div>
+	<footer>
+    <div class="container">
+		
+		<div class="row">
+			<div class="col-md-6 col-12">
+		<p>
+			<br>
+		CONTACTE<br>
+Adresa<br>
+Str. Ghenadie Iablocikin, 5, MD-2069,<br>
+Chișinău, Republica Moldova<br>
+Comisia de admitere<br>
+e-mail: <a href="mailto:admiterea@upsc.md"><font color="white">admiterea@upsc.md</font></a><br>
+mob. (+373) 69 60 71 31<br>
+mob. (+373) 68 68 62 64<br><br>
+
+Secretariat<br>
+e-mail: <a href="mailto:secretariat@upsc.md"><font color="white">secretariat@upsc.md</font></a><br>
+tel. (+373) 22 35 83 38<br>
+
+Contabilitate<br>
+e-mail: <a href="mailto:contabilitate@upsc.md"><font color="white">contabilitate@upsc.md</font></a><br>
+tel: (+373) 0 22 35 85 86<br>
+		
+		</p>
+			</div>
+			<br>
+			<div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+				<center>
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="340px" height="340px" id="gmap_canvas" src="https://maps.google.com/maps?q=Str.%20Ghenadie%20Iablocikin,%205,%20MD-2069,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:left;height:340px;width:340px; padding=0;}</style></div></div>
+					</center>
+			</div>
+		</div>
+		</div>
+		<hr class="hr-custom2">
+		<div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="4"><p>© <span id="footer-year"></span> FMTI – <a href="https://upsc.md"><font color="white">UPSC</font></a> – Toate drepturile rezervate</p></font>
+        </div>
+        <div class="col-md-6" align="right">
+          <p>
+			  
+
+            <a href="https://www.facebook.com/facultateafmti" target="_blank"><img
+                src="https://media.mihailungu.com/resources/fb-logo.png" style="width: 50px;height: 50px" /></a>
+
+            <a href="https://www.instagram.com/ust_fmti/" target="_blank"><img
+                src="https://media.mihailungu.com/resources/ig-logo.png" style="width: 50px;height: 50px" /></a>
+          </p>
+        </div>
+      </div>
+         </div>
+  </footer>
+</body>
+</html>
