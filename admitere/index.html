@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formular de Înregistrare pentru Admitere</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="https://fmti.mihailungu.com/resources/logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentYear = new Date().getFullYear();
+      var footerYear = document.getElementById("footer-year");
+      footerYear.textContent = currentYear;
+    });
+  </script>
+	<style>
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar-fixed-top {
+    animation: fadeIn 1s;
+  }
+
+  .navbar-fixed-top.hidden {
+    animation: fadeOut 1s;
+  }
+
+
+ 
+</style>
+
+
+	<script>
+  var prevScrollpos = window.pageYOffset;
+  var navbar = $(".navbar-fixed-top");
+
+  $(window).scroll(function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
+      $(".navbar-fixed-top").removeClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
+    } else {
+      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
+      $(".navbar-fixed-top").addClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
+    }
+    prevScrollpos = currentScrollPos;
+  });
+</script>
+
+
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;900&display=swap');
+</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+  <style>
+    .collapsible {
+		
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+	  color: #1e261f;
+    }
+
+    .collapsible-summary {
+      cursor: pointer;
+		color: #1e261f;
+    }
+	  a{
+		  color: #1e261f;
+	  }
+	  a:hover{
+		  color:#1e261f;
+	  }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $(".collapsible-summary").click(function() {
+        $(this).next().slideToggle();
+        $(this).find(".collapsible-icon").text(function(_, text) {
+          return text === "+" ? "-" : "+";
+        });
+      });
+    });
+  </script>
+<style>
+	.format{
+		font-size: 22px;
+	}
+	
+	
+	</style>
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+	  
+	  .hr-custom{
+		  border-top: 3px solid #333;
+	  }
+	  .hr-custom1{
+		  border-top:1px solid #333;
+	  }
+	  .hr-custom2{
+		  border-top:2px solid #B9B9B9;
+	  }
+	  .imagine-rotunda {
+		 border-radius:70px; 
+}
+
+	  
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+	  #column1 {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: auto;
+    }
+
+	  #column2 {
+      float: right;
+      width: 70%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+    /* Clear floats after the columns */
+	  .row{
+		  margin: 0px;
+	  }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	  
+	  .about {
+		  padding-left: 5px;
+		  padding-right: 0;
+		  
+	  }
+	  
+	  
+  </style>
+
+  <style>
+	  .dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #444;
+}
+
+.dropdown-menu > li > a > font {
+  color: #fff;
+}
+
+    .all-browsers {
+      margin: 0;
+      padding: 15px;
+      background-color: lightgray;
+    }
+
+    .all-browsers > h1,
+    .browser {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser > h2,
+    p {
+      margin: 4px;
+      font-size: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+		align-content: center;
+		justify-content: center;
+		font-family: "Onest", sans-serif;
+		
+	  }
+	  
+	  .mijloc {
+		  padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+	  }
+	  
+	
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      padding: 0;
+      background-color: black;
+      color: white;
+      margin-top: auto;
+    }
+
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+		
+    }
+  </style>
+
+  <style>
+    #container {
+      margin: 0 auto;
+      max-width: 1850px;
+    }
+
+    #content {
+      width: 100%;
+      padding: 20px;
+		
+    }
+	  .navbar-header{
+		  height: 50px;
+	  }
+	  .navbar-toggle{
+		  height: 45px;
+	  }
+	  .navbar-brand {
+		  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+	padding-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand font {
+  font-size: 38px;
+  font-family: "Lora";
+}
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+	  .nav-bar{
+		  font-size: 20px;
+	  }
+	  .dropdown-toggle{
+		  font-size: 20px;
+	  }
+	  img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+} 
+	  .navbar-inverse .navbar-nav > li > a {
+   
+    text-decoration: none; /* Elimina sublinierea textului prestabilit */
+    position: relative; /* Folosit pentru a crea o linie de sub text */
+}
+	   .navbar-inverse .navbar-nav > li > a:hover::after {
+    content: ""; /* Conținut gol pentru linie */
+    position: absolute; /* Stabilim poziția absolută */
+    bottom: 0; /* Poziționează linia sub text */
+    left: 0; /* Aliniază linia cu textul */
+    width: 100%; /* Latime de 100% a liniei */
+    height: 2px; /* Grosimea liniei */
+    background-color: white; /* Culoarea liniei la hover */
+}
+  </style>
+    <style>
+        
+        form {
+            max-width: 1400px;
+			width: 1000px;
+			height: auto;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px 20px 0 0;
+        }
+        label, input, select {
+			margin-left: 10px;
+			margin-right: 10px;
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        input[type="checkbox"] {
+            display: inline;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group select {
+            width: 45%;
+        }
+        .form-group input[type="text"] {
+            width: 50%;
+        }
+        .form-group label {
+            width: 45%;
+        }
+        input[type="file"] {
+            border: none;
+        }
+        input[type="submit"] {
+			width: 940px;
+            background-color: #3498db;
+            color: #fff;
+            
+			font-size: 35px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top hiden">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../"><img src="https://fmti.mihailungu.com/resources/logo.png" class="confirmed"
+            style="width:55;height:55px;" /></a>
+        <a class="navbar-brand" href="../"><font face="Lora">FMTI</font></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-bar" href="../">Acasă</a></li>
+			<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Studenți <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+                
+				
+                  <li><a href="../studenti/documente/"><font  size="+2">Documente</font></a></li>
+                  
+				<li><a href="../studenti/oferte-de-educatie/"><font size="+2">Oferte</font></a></li>
+         
+               
+
+              
+            </ul>
+          </li>
+			
+			
+          
+		
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+			<li><a  class="nav-bar" style="cursor: pointer">Admitere <span id="footer-year"></span></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+	<br> <br> <br> <br>
+    <form>
+        <h1>Formular de Înregistrare pentru Admitere</h1>
+        <!-- Informații personale -->
+        <div class="form-group">
+            <label for="nume">Nume:</label>
+			<label for="prenume">Prenume:</label>
+			</div>
+		<div class="form-group">
+            <input type="text" id="nume" name="nume" required>
+            
+            <input type="text" id="prenume" name="prenume" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+			<label for="telefon">Telefon:</label>
+			</div>
+		<div class="form-group">
+            <input type="email" id="email" name="email" required>
+            
+            <input type="tel" id="telefon" name="telefon" required>
+        </div>
+        <div class="form-group">
+            <label for="gen">Gen:</label>
+			
+			<label for="mediu_trai">Mediul de trai:</label>
+			 <label for="cetatenie">Cetățenie:</label>
+			<label for="nationalitate">Naționalitate:</label>
+            
+            
+            
+        </div>
+        <div class="form-group">
+           <select id="gen" name="gen">
+			   <option value="0">- - -</option>
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Feminin</option>
+            </select>
+			<select id="mediu_trai" name="mediu_trai">
+				<option value="0">- - -</option>
+                <option value="Rural">Rural</option>
+                <option value="Urban">Urban</option>
+            </select>
+            <select id="cetatenie" name="cetatenie">
+				<option value="0">- - -</option>
+                <option value="Moldovean">Moldovean</option>
+                <option value="Altele">Altele</option>
+            </select>
+            
+            <select id="nationalitate" name="nationalitate">
+				<option value="0">- - -</option>
+                <option value="Moldovean">Moldovean</option>
+                <option value="Altele">Altele</option>
+            </select>
+        </div>
+        <!-- Informații academice -->
+        <div class="form-group">
+            <label for="institutie_absolvita">Instituția absolvită:</label>
+			<label for="tip_diploma" style="margin-left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipul diplomei:</label>
+			<label for="ciclu">&nbsp;&nbsp;&nbsp;Ciclu:</label>
+		</div>
+			<div class="form-group">
+            <input type="text" id="institutie_absolvita" name="institutie_absolvita" required>
+            
+            <select id="tip_diploma" name="tip_diploma">
+				<option value="0">- - -</option>
+                <option value="bac">Bacalaureat</option>
+                <option value="colegiu">Colegiu</option>
+                <option value="scoala_medie">Școală Medie</option>
+                <option value="licenta">Licență</option>
+                <option value="master">Master</option>
+            </select>
+            
+            <select id="ciclu" name="ciclu">
+				<option value="0">- - -</option>
+                <option value="1">Ciclu 1</option>
+                <option value="2">Ciclu 2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="frecventa">Frecvența:</label>
+			<label for="facultate">Facultate:</label>
+			<label for="specialitate">Specialitate:</label>
+		</div>
+			
+            
+        
+        <div class="form-group">
+            <select id="frecventa" name="frecventa">
+                <option value="zi">Zi</option>
+                <option value="redusa">Redusă</option>
+            </select>
+            <label for="specialitate">Facultatea Fizică Matematică și Tehnologii Informaționale</label>
+            
+            
+			<select id="specialitate" name="specialitate">
+				<option value="0">- - -</option>
+                <option value="1">Matematica Informatica</option>
+                <option value="2">Matematica</option>
+                <option value="3">Informatica</option>
+                <option value="4">Fizica Informatica</option>
+                <option value="5">Informatica Matematica</option>
+                
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="limba_instruire">Limba de instruire:</label>
+			<label for="tip_finantare">Tip finanțare:</label>
+			<label for="cazare_camin">Cazare în cămin:</label>
+			
+			
+		</div>
+		<div class="form-group">
+            <select id="limba_instruire" name="limba_instruire">
+				<option value="0">- - -</option>
+                <option value="romana">Română</option>
+                <option value="rusa">Rusă</option>
+                <option value="alte">Alte limbi</option>
+            </select>
+            
+            <select id="tip_finantare" name="tip_finantare">
+				<option value="0">- - -</option>
+                <option value="buget">Buget</option>
+                <option value="contract">Contract</option>
+            </select>
+            
+            <select id="cazare_camin" name="cazare_camin">
+				<option value="0">- - -</option>
+                <option value="da">Da</option>
+                <option value="nu">Nu</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="act_identitate">Copia actului de identitate:</label>
+            
+            <label for="act_studii">Actul de studii în original cu anexa respectivă:</label>
+            
+        </div>
+		<div class="form-group">
+		<input type="file" id="act_identitate" name="act_identitate" accept=".pdf,.jpg,.jpeg,.png" required>
+		<input type="file" id="act_studii" name="act_studii" accept=".pdf,.jpg,.jpeg,.png" required>
+		</div>
+        <div class="form-group">
+            <label for="fotografie">Fotografie:</label>
+            
+            <label for="diplome">Diplome de gradul I-III:</label>
+            
+        </div>
+		<div class="form-group">
+		<input type="file" id="fotografie" name="fotografie" accept=".jpg,.jpeg,.png" required>
+		<input type="file" id="diplome" name="diplome" accept=".pdf,.jpg,.jpeg,.png">
+			</div>
+        <input type="submit" value="Trimite">
+    </form>
+	<br>
+	<footer>
+    <div class="container">
+		<div class="row">
+			<div class="col-md-5 col-12">
+		<p>
+			<br>
+		CONTACTE<br>
+Adresa<br>
+Str. Ghenadie Iablocikin, 5, MD-2069,<br>
+Chișinău, Republica Moldova<br>
+Comisia de admitere<br>
+e-mail: <a href="mailto:admiterea@upsc.md"><font color="white">admiterea@upsc.md</font></a><br>
+mob. (+373) 69 60 71 31<br>
+mob. (+373) 68 68 62 64<br><br>
+
+Secretariat<br>
+e-mail: <a href="mailto:secretariat@upsc.md"><font color="white">secretariat@upsc.md</font></a><br>
+tel. (+373) 22 35 83 38<br>
+
+Contabilitate<br>
+e-mail: <a href="mailto:contabilitate@upsc.md"><font color="white">contabilitate@upsc.md</font></a><br>
+tel: (+373) 0 22 35 85 86<br>
+		
+		</p>
+			</div>
+			<br>
+			<div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+				<center>
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="340px" height="340px" id="gmap_canvas" src="https://maps.google.com/maps?q=Str.%20Ghenadie%20Iablocikin,%205,%20MD-2069,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:left;height:340px;width:340px; padding=0;}</style></div></div>
+					</center>
+			</div>
+		</div>
+		</div>
+		<hr class="hr-custom2">
+		<div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="4"><p>© <span id="footer-year"></span> FMTI – <a href="https://upsc.md"><font color="white">UPSC</font></a> – Toate drepturile rezervate</p></font>
+        </div>
+        <div class="col-md-6" align="right">
+          <p>
+			  
+
+            <a href="https://www.facebook.com/facultateafmti" target="_blank"><img
+                src="https://media.mihailungu.com/resources/fb-logo.png" style="width: 50px;height: 50px" /></a>
+
+            <a href="https://www.instagram.com/ust_fmti/" target="_blank"><img
+                src="https://media.mihailungu.com/resources/ig-logo.png" style="width: 50px;height: 50px" /></a>
+          </p>
+        </div>
+      </div>
+         </div>
+  </footer>
+</body>
+</html>
