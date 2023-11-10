@@ -11,6 +11,8 @@
     document.addEventListener("DOMContentLoaded", function() {
       var currentYear = new Date().getFullYear();
       var footerYear = document.getElementById("footer-year");
+	    var admitereYear = document.getElementById("admitere-year");
+		admitereYear.textContent = currentYear;
       footerYear.textContent = currentYear;
     });
   </script>
@@ -414,7 +416,7 @@
 		
         </ul>
         <ul class="nav navbar-nav navbar-right">
-			<li><a  class="nav-bar" style="cursor: pointer">Admitere <span id="footer-year"></span></a></li>
+			<li><a  class="nav-bar" style="cursor: pointer">Admitere <span id="admitere-year"></span></a></li>
 
         </ul>
       </div>
