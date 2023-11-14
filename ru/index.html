@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Факультет физики, математики и информационных технологий</title>
+  <link rel="icon" type="image/x-icon" href="../resources/logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var currentYear = new Date().getFullYear();
+      var footerYear = document.getElementById("footer-year");
+	    var admitereYear = document.getElementById("admitere-year");
+		admitereYear.textContent = currentYear;
+      footerYear.textContent = currentYear;
+    });
+  </script>
+	
+	
+ <style>
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navbar-fixed-top {
+    animation: fadeIn 1s;
+  }
+
+  .navbar-fixed-top.hidden {
+    animation: fadeOut 1s;
+  }
+
+
+ 
+</style>
+
+
+	<script>
+  var prevScrollpos = window.pageYOffset;
+  var navbar = $(".navbar-fixed-top");
+
+  $(window).scroll(function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
+      $(".navbar-fixed-top").removeClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
+    } else {
+      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
+      $(".navbar-fixed-top").addClass("hidden");
+      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
+    }
+    prevScrollpos = currentScrollPos;
+  });
+</script>
+
+
+
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;900&display=swap');
+</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+  <style>
+    .collapsible {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .collapsible-summary {
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $(".collapsible-summary").click(function() {
+        $(this).next().slideToggle();
+        $(this).find(".collapsible-icon").text(function(_, text) {
+          return text === "+" ? "-" : "+";
+        });
+      });
+    });
+  </script>
+<style>
+	.format{
+		font-size: 22px;
+	}
+	
+	
+	</style>
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+	  
+	  .hr-custom{
+		  border-top: 3px solid #333;
+	  }
+	  .hr-custom1{
+		  border-top:1px solid #333;
+	  }
+	  .hr-custom2{
+		  border-top:2px solid #B9B9B9;
+	  }
+	  .imagine-rotunda {
+		 border-radius:70px; 
+}
+
+	  
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+	  #column1 {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: auto;
+    }
+
+	  #column2 {
+      float: right;
+      width: 70%;
+      padding: 10px;
+      height: auto;
+    }
+	  
+    /* Clear floats after the columns */
+	  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	  
+	  .about {
+		  padding-left: 5px;
+		  padding-right: 0;
+		  
+	  }
+	  
+	  
+  </style>
+
+  <style>
+	  .dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #444;
+}
+
+.dropdown-menu > li > a > font {
+  color: #fff;
+}
+
+    .all-browsers {
+      margin: 0;
+      padding: 15px;
+      background-color: lightgray;
+    }
+
+    .all-browsers > h1,
+    .browser {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser > h2,
+    p {
+      margin: 4px;
+      font-size: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+		align-content: center;
+		justify-content: center;
+		font-family: "Onest", sans-serif;
+		
+	  }
+	  
+	  .mijloc {
+		  padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+	  }
+	  
+	
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      padding: 0;
+      background-color: black;
+      color: white;
+      margin-top: auto;
+    }
+
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: 0;
+		
+    }
+  </style>
+
+  <style>
+    #container {
+      margin: 0 auto;
+      max-width: 1850px;
+    }
+
+    #content {
+      width: 100%;
+      padding: 20px;
+		
+    }
+	  .navbar-header{
+		  height: 50px;
+	  }
+	  .navbar-toggle{
+		  height: 45px;
+	  }
+	  .navbar-brand {
+		  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+	padding-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand font {
+  font-size: 38px;
+  font-family: "Lora";
+}
+
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+	  .nav-bar{
+		  font-size: 20px;
+	  }
+	  .dropdown-toggle{
+		  font-size: 20px;
+	  }
+	  img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+} 
+	  .navbar-inverse .navbar-nav > li > a {
+   
+    text-decoration: none; /* Elimina sublinierea textului prestabilit */
+    position: relative; /* Folosit pentru a crea o linie de sub text */
+}
+	   .navbar-inverse .navbar-nav > li > a:hover::after {
+    content: ""; /* Conținut gol pentru linie */
+    position: absolute; /* Stabilim poziția absolută */
+    bottom: 0; /* Poziționează linia sub text */
+    left: 0; /* Aliniază linia cu textul */
+    width: 100%; /* Latime de 100% a liniei */
+    height: 2px; /* Grosimea liniei */
+    background-color: white; /* Culoarea liniei la hover */
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top hiden">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href=""><img src="../resources/logo.png" class="confirmed"
+            style="width:55;height:55px;" /></a>
+        <a class="navbar-brand" href=""><font face="Lora">FMTI</font></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a class="nav-bar" href="">Дом</a></li>
+			<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Студенты <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+                
+				
+                  <li><a href="../studenti/documente/ru"><font  size="+2">документы</font></a></li>
+                 
+				<li><a href="../studenti/oferte-de-educatie/ru"><font size="+2">Предложения</font></a></li>
+         
+               
+
+              
+            </ul>
+          </li>
+          
+		
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+			<li><a href="../admitere/ru" class="nav-bar" style="cursor: pointer">Поступление <span id="admitere-year"></span></a></li>
+<li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://media.mihailungu.com/resources/ru-flag.jpg" class="confirmed" style="width: 25px;height:15px;"/>&nbsp;&nbsp;RU <span class="caret"></span></a>
+            <ul class="dropdown-menu " style="width:50%" >
+				
+              <li><a href="../en/"><img src="https://media.mihailungu.com/resources/en-flag.png" class="confirmed" style="width: 25px;height:15px;" />&nbsp;&nbsp;<font>EN</font></a></li>
+              <li><a href="../"><img src="https://media.mihailungu.com/resources/ro-flag.png" class="confirmed" style="width: 25px;height:15px;" />&nbsp;&nbsp;<font>RO</font></a></li>
+				
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br>
+
+  <img src="../resources/header.png" alt="FMTI" title="FMTI">
+
+  <div class="mijloc">
+<br>
+	  
+    <div id="content" class="container">
+		
+	  <h1>Факультет Физики, Математики и Информационных Технологий</h1>
+<h4 class="format"><b><i>Факультет Физики, Математики и Информационных Технологий</i></b> (ФФМИ) является первым факультетом в Республике Молдова, основанным 1 октября 1930 года. Его основной целью является организация и проведение учебно-воспитательного процесса, а также проведение научных исследований в областях математики, физики, информатики и информационных технологий.
+
+На факультете активно работают 42 преподавателя, в том числе 6 докторов наук, профессоров и 25 докторов наук, доцентов.
+
+Факультет ФФМИ <b><i>сотрудничает</i></b> с профильными учреждениями в Румынии (Университет Крайовы, Университет "Штефан чел Маре" в Сучава, Университет "Ал. И. Куза" в Яссы, Каза Корпул Дидактик в Сучава), Украине (Национальный университет Черновиц), Италии (Университет Генуи), Словении (Университет Марибор), Беларуси (Университет Минска), Китае (Шанхайский нормальный университет), Польше (Педагогический университет в Кракове), России (Физико-технический институт им. А. Иоффе в Санкт-Петербурге), Корее (Институт наноэлектроники в Сеуле) и др.
+
+На факультете ФФМИ <b><i>действуют</i></b>:</h4>
+
+<h4 class="format"><ul>
+  <li>Лаборатория исследования творческого искусственного интеллекта;</li>
+  <li>Лаборатория исследования актуальных проблем математического анализа и алгебры;</li>
+  <li>Лаборатория исследования алгебры, геометрии и топологии;</li>
+  <li>Лаборатория исследования программирования образовательных программ;</li>
+  <li>Лаборатория программирования и робототехники CYBER;</li>
+  <li>Лаборатория механики и молекулярной физики;</li>
+  <li>Лаборатория электромагнетизма и оптической физики;</li>
+  <li>Лаборатория исследования обучения в цифровых средах;</li>
+  <li>Лаборатория исследования разработки цифровых образовательных ресурсов;</li>
+  <li>Междисциплинарная лаборатория твердотельной физики;</li>
+  <li>Научный семинар по дифференциальным уравнениям и алгебре;</li>
+  <li>Научный семинар по физике конденсированного состояния.</li>
+</ul></h4>
+
+<h4 class="format">В период с 2015 по 2022 год факультет ФФМИ в рамках конкурса проводит научные исследования в рамках 5 <b><i>институциональных проектов</i></b> с финансированием из бюджета:</h4>
+
+<h4 class="format">
+  <ul>
+    <li>Исследование функционально-топологических структур и их применение (руководитель проекта: академик Митрофан Чобан);</li>
+    <li>Исследование изменения энергетического спектра носителей заряда в антимониде галлия под воздействием допантов из групп переходных элементов и редкоземельных элементов и взаимодействия донор-акцептор (руководитель проекта: доцент Игорь Постолаки);</li>
+    <li>Изучение стратегий применения метода научных исследований в активных виртуальных средах (руководитель проекта: доцент Михай Калалб);</li>
+    <li>Методологии непрерывного образования с использованием компьютера для учителей математики и информатики (руководитель проекта: профессор Илье Лупу);</li>
+    <li>Методология внедрения ИКТ в процесс обучения естественным наукам в системе образования Республики Молдова с точки зрения междисциплинарности/трансдисциплинарности (концепция STEAM) (руководитель проекта: профессор Любомир Кириак).</li>
+  </ul>
+</h4>
+
+<h4 class="format">В период с 2018 по 2020 год факультет ФФМИ проводит научные исследования в рамках 2 <b><i>международных проектов</i></b>:</h4>
+
+<h4 class="format">
+  <ul>
+    <li>NATO SPS G5381 MIDAS – Управление командой мини-БЛА в поддержку контртеррористических миссий;</li>
+    <li>NATO SPS G5437 WITNESS – Широкая интеграция сетей датчиков для обеспечения смарт-наблюдения.</li>
+  </ul>
+</h4>
+
+<h2 align="center">Руководство:</h2>
+<hr class="hr-custom" width="288px" align="center" size="5" color="#414141">
+<div class="row">
+  <div class="col-md-6 col-12 text-center">
+    <h2>Декан</h2>
+    <h3>Андрей Брайков</h3>
+    <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_a_braicov.jpg" alt="" width="300px" height="300px">
+    <h4>доктор, доцент</h4>
+    <h4>e-mail: <a href="mailto:braicov.andrei@upsc.md">braicov.andrei@upsc.md</a>,</h4>
+    <h4>телефон: <a href="tel:(+373) 22 74 79 19">(+373) 22 74 79 19</a></h4>
+  </div>
+  <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+    <h2>Продекан</h2>
+    <h3>Виталий Путунтика</h3>
+    <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_v_putuntica.jpg" alt="" width="300px" height="300px">
+    <h4>доктор, доцент</h4>
+    <h4>e-mail: <a href="mailto:putuntica.vitalie@upsc.md">putuntica.vitalie@upsc.md</a>,</h4>
+    <h4>телефон: <a href="tel:(+373) 22 74 79 19">(+373) 22 74 79 19</a></h4>
+  </div>
+</div>
+<hr class="hr-custom1">
+<br>
+<h2 align="center">Кафедры:</h2>
+<hr class="hr-custom" width="288px" align="center" size="5" color="#414141">
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-12 text-center">
+    <h3>Информатика и информационные технологии</h3>
+    <h3>Заведующий кафедрой</h3>
+    <h4>Любомир Кириак</h4>
+    <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_l_chiriac.jpg" alt="" width="300px" height="300px">
+    <h4>доктор наук, профессор</h4>
+    <h4>e-mail: <a href="mailto:chiriac.liubomir@upsc.md">chiriac.liubomir@upsc.md</a></h4>
+  </div>
+  <div class="col-lg-3 col-md-6 col-12 text-center">
+    <h3>Математический анализ и дифференциальные уравнения</h3>
+    <h3>Заведующий кафедрой</h3>
+    <h4>Дмитрий Козма</h4>
+    <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_d_cozma.jpg" alt="" width="300px" height="300px">
+    <h4>доктор наук, профессор</h4>
+    <h4>e-mail: <a href="mailto:cozma.dumitru@upsc.md">cozma.dumitru@upsc.md</a></h4>
+  </div>
+  <div class="col-lg-3 col-md-6 col-12 text-center">
+    <h3>Алгебра, геометрия и топология</h3><br>
+    <h3>Заведующий кафедрой</h3>
+    <h4>Дорин Афанас</h4>
+    <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_d_afanas.jpg" alt="" width="300px" height="300px">
+    <h4>доктор, доцент</h4>
+    <h4>e-mail: <a href="mailto:afanas.dorin@upsc.md">afanas.dorin@upsc.md</a></h4>
+  </div>
+          <div class="col-lg-3 col-md-6 col-12 text-center">
+    <h3>Теоретическая и экспериментальная физика</h3><br>
+    <h3>Заведующий кафедрой</h3>
+    <h4>Игорь Постолаки</h4>
+    <img class="imagine-rotunda" src="https://upsc.md/wp-content/uploads/2022/10/fmti_i_postolachi.jpg" alt="" width="300px" height="300px">
+    <h4>доктор, доцент</h4>
+    <h4>e-mail: <a href="mailto:postolachi.igor@upsc.md">postolachi.igor@upsc.md</a></h4>
+</div>
+</div>
+<br>
+
+<div class="collapsible">
+    <div class="collapsible-summary">
+
+        <h3>Возможности трудоустройства <span class="collapsible-icon">+</span></h3>
+    </div>
+    <div class="collapsible-content" style="display: none;">
+
+        <h4 class="format">
+            Выпускники факультета FMTI имеют отличные возможности для трудоустройства. Они могут работать в качестве:
+            <ul>
+
+                <li>Аналитик данных (собирает, анализирует и интерпретирует данные для создания статистических отчетов для конкретного подразделения учреждения, разрабатывает инструменты для сбора данных, проектирует и разрабатывает специфические базы данных);</li>
+                <li>Администратор баз данных (предоставляет техническую экспертизу для проектирования, внедрения и поддержки реляционных баз данных, отслеживает и обеспечивает безопасность баз данных);</li>
+                <li>Администратор сети (управляет компьютерными сетями; выполняет работы по обслуживанию, оценке, установке, настройке сетей, обеспечивает безопасность сетей и обучает пользователей с целью максимизации производительности);</li>
+                <li>Аналитик технической поддержки (предоставляет необходимую техническую поддержку программному и аппаратному обеспечению для различных рабочих групп учреждения);</li>
+                <li>Программист-аналитик (анализирует и оценивает научные и деловые проблемы; проектирует компьютерные программы, собирает информацию и определяет проблемы после обсуждения с пользователем; разрабатывает полные спецификации, которые помогут программистам в написании программ);</li>
+                <li>Документалист в области информационных технологий (пишет и редактирует технические отчеты, брошюры, руководства для внутренней документации; закупает материалы из Интернета, необходимые учреждению)</li>
+                <li>Преподаватель в начальной и средней школе по указанным областям;</li>
+                <li>Исследователь в исследовательских институтах по указанным областям;</li>
+                <li>Инженер-физик;</li>
+                <li>Оператор ввода данных (осуществляет ввод данных в соответствии с процедурами, используя обработку типа Office и специализированные программные пакеты);</li>
+                <li>Программист (проектирует, поддерживает, тестирует и модифицирует программы);</li>
+                <li>Менеджер в учреждениях образования;</li>
+                <li>Дизайнер программного обеспечения (разрабатывает и поддерживает клиент-серверные приложения, мультимедийные приложения, информационные системы, программное обеспечение для телекоммуникаций, образовательное программное обеспечение);</li>
+                <li>Веб-дизайнер (создает и поддерживает веб-сайты; разрабатывает новый контент или адаптирует существующий) и т. д.</li>
+            </ul>
+
+        </h4>
+
+    </div>
+</div>
+
+</div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <p>
+                    <br>
+                    КОНТАКТЫ<br>
+                    Адрес<br>
+                    ул. Геннадия Яблоцыкина, 5, MD-2069,<br>
+                    Кишинев, Республика Молдова<br>
+                    Приемная комиссия<br>
+                    e-mail: <a href="mailto:admiterea@upsc.md"><font color="white">admiterea@upsc.md</font></a><br>
+                    моб. (+373) 69 60 71 31<br>
+                    моб. (+373) 68 68 62 64<br><br>
+
+                    Секретариат<br>
+                    e-mail: <a href="mailto:secretariat@upsc.md"><font color="white">secretariat@upsc.md</font></a><br>
+                    тел. (+373) 22 35 83 38<br>
+
+                    Бухгалтерия<br>
+                    e-mail: <a href="mailto:contabilitate@upsc.md"><font color="white">contabilitate@upsc.md</font></a><br>
+                    тел: (+373) 0 22 35 85 86<br>
+
+                </p>
+            </div>
+            <br>
+            <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+                <center>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="340px" height="340px" id="gmap_canvas" src="https://maps.google.com/maps?q=Str.%20Ghenadie%20Iablocikin,%205,%20MD-2069,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:left;height:340px;width:340px; padding=0;}</style></div></div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-custom2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <font size="4"><p>© <span id="footer-year"></span> FMTI – <a href="https://upsc.md"><font color="white">UPSC</font></a> – Все права защищены</p></font>
+            </div>
+            <div class="col-md-6" align="right">
+                <p>
+
+                    <a href="https://www.facebook.com/facultateafmti" target="_blank"><img
+                            src="https://media.mihailungu.com/resources/fb-logo.png" style="width: 50px;height: 50px" /></a>
+
+                    <a href="https://www.instagram.com/ust_fmti/" target="_blank"><img
+                            src="https://media.mihailungu.com/resources/ig-logo.png" style="width: 50px;height: 50px" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
