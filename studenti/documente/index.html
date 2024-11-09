@@ -53,24 +53,6 @@
 </style>
 
 
-	<script>
-  var prevScrollpos = window.pageYOffset;
-  var navbar = $(".navbar-fixed-top");
-
-  $(window).scroll(function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
-      $(".navbar-fixed-top").removeClass("hidden");
-      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
-    } else {
-      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
-      $(".navbar-fixed-top").addClass("hidden");
-      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
-    }
-    prevScrollpos = currentScrollPos;
-  });
-</script>
 
 
 
