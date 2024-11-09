@@ -48,26 +48,6 @@
 </style>
 
 
-	<script>
-  var prevScrollpos = window.pageYOffset;
-  var navbar = $(".navbar-fixed-top");
-
-  $(window).scroll(function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      // Derulare în sus: afișăm bara de navigare și aplicăm animația de intrare
-      $(".navbar-fixed-top").removeClass("hidden");
-      $(".navbar-fixed-top").css("animation", "fadeIn 1s");
-    } else {
-      // Derulare în jos: ascundem bara de navigare și aplicăm animația de ieșire
-      $(".navbar-fixed-top").addClass("hidden");
-      $(".navbar-fixed-top").css("animation", "fadeOut 1s");
-    }
-    prevScrollpos = currentScrollPos;
-  });
-</script>
-
-
 
 
   <style>
@@ -322,167 +302,85 @@
     background-color: white; /* Culoarea liniei la hover */
 }
   </style>
-    <style>
-        
-        form {
-            max-width: 1400px;
-			width: 1000px;
-			height: auto;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            text-align: center;
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px;
-            border-radius: 20px 20px 0 0;
-        }
-        label,
-input,
-select {
-    margin: 10px;
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-}
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
 
-input[type="checkbox"] {
-    display: inline;
-}
+    form {
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      font-family: "Onest", sans-serif;
+    }
 
-.form-group {
-    display: flex;
-    justify-content: space-between;
-}
+    form h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 900;
+      font-size: 32px;
+      color: #333;
+    }
 
-.form-group select {
-    width: 45%;
-    padding: 10px;
-    font-size: 1.2em;
-    border: 1px solid #3498db;
-    border-radius: 4px;
-    background-color: #ecf0f1;
-    color: #333;
-}
+    .form-group {
+      margin-bottom: 20px;
+    }
 
-.form-group input[type="text"] {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.2em;
-    border: 1px solid #3498db;
-    border-radius: 4px;
-    background-color: #ecf0f1;
-    color: #333;
-}.form-group input[type="email"] {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.2em;
-    border: 1px solid #3498db;
-    border-radius: 4px;
-    background-color: #ecf0f1;
-    color: #333;
-}
-		.form-group input[type="tel"] {
-    width: 50%;
-    padding: 10px;
-    font-size: 1.2em;
-    border: 1px solid #3498db;
-    border-radius: 4px;
-    background-color: #ecf0f1;
-    color: #333;
-}
-		
-.form-group label {
-    width: 45%;
-    font-size: 1.2em;
-    color: #333;
-}
+    label {
+      font-weight: 300;
+      margin-bottom: 5px;
+      display: block;
+      font-size: 18px;
+      color: #555;
+    }
 
-input[type="file"] {
-    margin-top: 5px;
-}
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    input[type="file"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 300;
+      background-color: #f9f9f9;
+    }
 
-input[type="submit"] {
-    width: 940px;
-    background-color: #e74c3c;
-    color: #fff;
-    font-size: 1.5em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px;
-}
-		input[type="submit"]:hover{
-			background-color: #A72214;
-			box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-		}
-/* Additional styling for labels within form-group */
-.form-group label {
-    font-size: 1.2em;
-    color: #555;
-}
+    input[type="file"] {
+      padding: 5px;
+    }
 
-/* Style for file inputs */
-input[type="file"] {
-    margin-top: 5px;
-}
+    button[type="submit"] {
+      width: 100%;
+      background-color: #28a745;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: 900;
+      cursor: pointer;
+    }
 
-/* Style for the labels associated with file inputs */
-.form-group label[for^="act_"] {
-    margin-top: 10px;
-}
+    button[type="submit"]:hover {
+      background-color: #218838;
+    }
 
-/* Custom styles for select options */
-.form-group select option {
-    font-size: 1.1em;
-    background-color: #ecf0f1;
-    color: #555;
-}
-/* ... (your existing styles) ... */
+    @media (max-width: 576px) {
+      form {
+        padding: 20px;
+      }
 
-/* Style for file inputs */
-input[type="file"]::-webkit-file-upload-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type="file"]::-webkit-file-upload-button:hover {
-  background-color: #285C2A;
-  color: white;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 1);
-}
-
-.file-input-label {
-    display: inline-block;
-    padding: 10px;
-    font-size: 1.2em;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Style for the labels associated with file inputs */
-.form-group label[for^="act_"] {
-    margin-top: 10px;
-}
-
-/* Custom styles for select options */
-.form-group select option {
-    font-size: 1.1em;
-    background-color: #ecf0f1;
-    color: #555;
-}
-
-    </style>
+      label, input, select, button {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top hiden">
@@ -527,159 +425,147 @@ input[type="file"]::-webkit-file-upload-button:hover {
       </div>
     </div>
   </nav>
-	<br> <br> <br> <br>
+	<br> <br> <br> <br> 
+  
     <form>
-        <h1>Formular de Înregistrare pentru Admitere</h1>
-        <!-- Informații personale -->
-        <div class="form-group">
-            <label for="nume">Nume:</label>
-			<label for="prenume">Prenume:</label>
-			</div>
-		<div class="form-group">
-            <input type="text" id="nume" name="nume" required>
-            
-            <input type="text" id="prenume" name="prenume" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-			<label for="telefon">Telefon:</label>
-			</div>
-		<div class="form-group">
-            <input type="email" id="email" name="email" required>
-            
-            <input type="tel" id="telefon" name="telefon" required>
-        </div>
-        <div class="form-group">
-            <label for="gen">Gen:</label>
-			
-			<label for="mediu_trai">Mediul de trai:</label>
-			 <label for="cetatenie">Cetățenie:</label>
-			<label for="nationalitate">Naționalitate:</label>
-            
-            
-            
-        </div>
-        <div class="form-group">
-           <select id="gen" name="gen">
-			   <option value="0">- - -</option>
-                <option value="masculin">Masculin</option>
-                <option value="feminin">Feminin</option>
-            </select>
-			<select id="mediu_trai" name="mediu_trai">
-				<option value="0">- - -</option>
-                <option value="Rural">Rural</option>
-                <option value="Urban">Urban</option>
-            </select>
-            <select id="cetatenie" name="cetatenie">
-				<option value="0">- - -</option>
-                <option value="Moldovean">Moldovean</option>
-                <option value="Altele">Altele</option>
-            </select>
-            
-            <select id="nationalitate" name="nationalitate">
-				<option value="0">- - -</option>
-                <option value="Moldovean">Moldovean</option>
-                <option value="Altele">Altele</option>
-            </select>
-        </div>
-        <!-- Informații academice -->
-        <div class="form-group">
-            <label for="institutie_absolvita">Instituția absolvită:</label>
-			<label for="tip_diploma" style="margin-left: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tipul diplomei:</label>
-			<label for="ciclu">&nbsp;&nbsp;&nbsp;Ciclu:</label>
-		</div>
-			<div class="form-group">
-            <input type="text" id="institutie_absolvita" name="institutie_absolvita" required>
-            
-            <select id="tip_diploma" name="tip_diploma">
-				<option value="0">- - -</option>
-                <option value="bac">Bacalaureat</option>
-                <option value="colegiu">Colegiu</option>
-                <option value="scoala_medie">Școală Medie</option>
-                <option value="licenta">Licență</option>
-                <option value="master">Master</option>
-            </select>
-            
-            <select id="ciclu" name="ciclu">
-				<option value="0">- - -</option>
-                <option value="1">Ciclu 1</option>
-                <option value="2">Ciclu 2</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="frecventa">Frecvența:</label>
-			<label for="facultate">Facultate:</label>
-			<label for="specialitate">Specialitate:</label>
-		</div>
-			
-            
-        
-        <div class="form-group">
-            <select id="frecventa" name="frecventa">
-                <option value="zi">Zi</option>
-                <option value="redusa">Redusă</option>
-            </select>
-            <label for="specialitate">Facultatea Fizică Matematică și Tehnologii Informaționale</label>
-            
-            
-			<select id="specialitate" name="specialitate">
-				<option value="0">- - -</option>
-                <option value="1">Matematica Informatica</option>
-                <option value="2">Matematica</option>
-                <option value="3">Informatica</option>
-                <option value="4">Fizica Informatica</option>
-                <option value="5">Informatica Matematica</option>
-                
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="limba_instruire">Limba de instruire:</label>
-			<label for="tip_finantare">Tip finanțare:</label>
-			<label for="cazare_camin">Cazare în cămin:</label>
-			
-			
-		</div>
-		<div class="form-group">
-            <select id="limba_instruire" name="limba_instruire">
-				<option value="0">- - -</option>
-                <option value="romana">Română</option>
-                <option value="rusa">Rusă</option>
-                <option value="alte">Alte limbi</option>
-            </select>
-            
-            <select id="tip_finantare" name="tip_finantare">
-				<option value="0">- - -</option>
-                <option value="buget">Buget</option>
-                <option value="contract">Contract</option>
-            </select>
-            
-            <select id="cazare_camin" name="cazare_camin">
-				<option value="0">- - -</option>
-                <option value="da">Da</option>
-                <option value="nu">Nu</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="act_identitate">Copia actului de identitate:</label>
-            
-            <label for="act_studii">Actul de studii în original cu anexa respectivă:</label>
-            
-        </div>
-		<div class="form-group">
-		<input type="file" id="act_identitate" name="act_identitate" accept=".pdf,.jpg,.jpeg,.png" required>
-		<input type="file" id="act_studii" name="act_studii" accept=".pdf,.jpg,.jpeg,.png" required>
-		</div>
-        <div class="form-group">
-            <label for="fotografie">Fotografie:</label>
-            
-            <label for="diplome">Diplome de gradul I-III:</label>
-            
-        </div>
-		<div class="form-group">
-		<input type="file" id="fotografie" name="fotografie" accept=".jpg,.jpeg,.png" required>
-		<input type="file" id="diplome" name="diplome" accept=".pdf,.jpg,.jpeg,.png">
-			</div>
-        <input type="submit" value="Trimite">
+      <h1>Formular de Înregistrare pentru Admitere</h1>
+      <!-- Informații personale -->
+      <div class="form-group">
+        <label for="nume">Nume:</label>
+        <input type="text" class="form-control" id="nume" name="nume" required>
+      </div>
+      <div class="form-group">
+        <label for="prenume">Prenume:</label>
+        <input type="text" class="form-control" id="prenume" name="prenume" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telefon">Telefon:</label>
+        <input type="tel" class="form-control" id="telefon" name="telefon" required>
+      </div>
+      <div class="form-group">
+        <label for="gen">Gen:</label>
+        <select id="gen" name="gen" class="form-control">
+          <option value="0">- - -</option>
+          <option value="masculin">Masculin</option>
+          <option value="feminin">Feminin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mediu_trai">Mediul de trai:</label>
+        <select id="mediu_trai" name="mediu_trai" class="form-control">
+          <option value="0">- - -</option>
+          <option value="Rural">Rural</option>
+          <option value="Urban">Urban</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cetatenie">Cetățenie:</label>
+        <select id="cetatenie" name="cetatenie" class="form-control">
+          <option value="0">- - -</option>
+          <option value="Moldovean">Moldovean</option>
+          <option value="Altele">Altele</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nationalitate">Naționalitate:</label>
+        <select id="nationalitate" name="nationalitate" class="form-control">
+          <option value="0">- - -</option>
+          <option value="Moldovean">Moldovean</option>
+          <option value="Altele">Altele</option>
+        </select>
+      </div>
+      <!-- Informații academice -->
+      <div class="form-group">
+        <label for="institutie_absolvita">Instituția absolvită:</label>
+        <input type="text" class="form-control" id="institutie_absolvita" name="institutie_absolvita" required>
+      </div>
+      <div class="form-group">
+        <label for="tip_diploma">Tipul diplomei:</label>
+        <select id="tip_diploma" name="tip_diploma" class="form-control">
+          <option value="0">- - -</option>
+          <option value="bac">Bacalaureat</option>
+          <option value="colegiu">Colegiu</option>
+          <option value="scoala_medie">Școală Medie</option>
+          <option value="licenta">Licență</option>
+          <option value="master">Master</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ciclu">Ciclu:</label>
+        <select id="ciclu" name="ciclu" class="form-control">
+          <option value="0">- - -</option>
+          <option value="1">Ciclu 1</option>
+          <option value="2">Ciclu 2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="frecventa">Frecvența:</label>
+        <select id="frecventa" name="frecventa" class="form-control">
+          <option value="zi">Zi</option>
+          <option value="redusa">Redusă</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Facultatea:</label>
+        <p>Facultatea Fizică Matematică și Tehnologii Informaționale</p>
+      </div>
+      <div class="form-group">
+        <label for="specialitate">Specialitate:</label>
+        <select id="specialitate" name="specialitate" class="form-control">
+          <option value="0">- - -</option>
+          <option value="1">Matematica Informatica</option>
+          <option value="2">Matematica</option>
+          <option value="3">Informatica</option>
+          <option value="4">Fizica Informatica</option>
+          <option value="5">Informatica Matematica</option>
+        </select>
+      </div>
+      <div class="form-group"></div>
+        <label for="limba_instruire">Limba de instruire:</label>
+        <select id="limba_instruire" name="limba_instruire" class="form-control">
+          <option value="0">- - -</option>
+          <option value="romana">Română</option>
+          <option value="rusa">Rusă</option>
+          <option value="alte">Alte limbi</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="tip_finantare">Tip finanțare:</label>
+        <select id="tip_finantare" name="tip_finantare" class="form-control">
+          <option value="0">- - -</option>
+          <option value="buget">Buget</option>
+          <option value="contract">Contract</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cazare_camin">Cazare în cămin:</label>
+        <select id="cazare_camin" name="cazare_camin" class="form-control">
+          <option value="0">- - -</option>
+          <option value="da">Da</option>
+          <option value="nu">Nu</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="act_identitate">Copia actului de identitate:</label>
+        <input type="file" class="form-control-file" id="act_identitate" name="act_identitate" accept=".pdf,.jpg,.jpeg,.png" required>
+      </div>
+      <div class="form-group">
+        <label for="act_studii">Actul de studii în original cu anexa respectivă:</label>
+        <input type="file" class="form-control-file" id="act_studii" name="act_studii" accept=".pdf,.jpg,.jpeg,.png" required>
+      </div>
+      <div class="form-group">
+        <label for="fotografie">Fotografie:</label>
+        <input type="file" class="form-control-file" id="fotografie" name="fotografie" accept=".jpg,.jpeg,.png" required>
+      </div>
+      <div class="form-group">
+        <label for="diplome">Diplome de gradul I-III:</label>
+        <input type="file" class="form-control-file" id="diplome" name="diplome" accept=".pdf,.jpg,.jpeg,.png">
+      </div>
+      <button type="submit" class="btn btn-primary">Trimite</button>
     </form>
 	<br>
 	<footer>
